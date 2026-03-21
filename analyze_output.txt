@@ -1,0 +1,174 @@
+Resolving dependencies...
+Downloading packages...
+  _fe_analyzer_shared 93.0.0 (98.0.0 available)
+  analyzer 10.0.1 (12.0.0 available)
+  flutter_riverpod 3.2.1 (3.3.1 available)
+  logger 2.6.2 (2.7.0 available)
+  meta 1.17.0 (1.18.2 available)
+  mgrs_dart 2.0.0 (3.0.0 available)
+  native_toolchain_c 0.17.5 (0.17.6 available)
+  proj4dart 2.1.0 (3.0.0 available)
+  test 1.30.0 (1.31.0 available)
+  test_api 0.7.10 (0.7.11 available)
+  test_core 0.6.16 (0.6.17 available)
+  unicode 0.3.1 (1.1.9 available)
+  vector_math 2.2.0 (2.3.0 available)
+  win32 5.15.0 (6.0.0 available)
+Got dependencies!
+14 packages have newer versions incompatible with dependency constraints.
+Try `flutter pub outdated` for more information.
+Analyzing ExploreNepal...                                       
+
+  error • Classes can only extend other classes • lib/features/admin/presentation/business_promotion_form.dart:5:43 • extends_non_class
+  error • No associated named super constructor parameter • lib/features/admin/presentation/business_promotion_form.dart:6:44 • super_formal_parameter_without_associated_named
+  error • Undefined class 'State' • lib/features/admin/presentation/business_promotion_form.dart:9:3 • undefined_class
+warning • The method doesn't override an inherited method • lib/features/admin/presentation/business_promotion_form.dart:9:38 • override_on_non_overriding_member
+  error • Classes can only extend other classes • lib/features/admin/presentation/business_promotion_form.dart:12:49 • extends_non_class
+  error • The method 'GlobalKey' isn't defined for the type '_BusinessPromotionFormScreenState' • lib/features/admin/presentation/business_promotion_form.dart:13:20 • undefined_method
+  error • The name 'FormState' isn't a type, so it can't be used as a type argument • lib/features/admin/presentation/business_promotion_form.dart:13:30 • non_type_as_type_argument
+warning • The value of the field '_selectedCategory' isn't used • lib/features/admin/presentation/business_promotion_form.dart:14:17 • unused_field
+  error • Undefined class 'Widget' • lib/features/admin/presentation/business_promotion_form.dart:20:3 • undefined_class
+warning • The method doesn't override an inherited method • lib/features/admin/presentation/business_promotion_form.dart:20:10 • override_on_non_overriding_member
+  error • Undefined class 'BuildContext' • lib/features/admin/presentation/business_promotion_form.dart:20:16 • undefined_class
+  error • The method 'Scaffold' isn't defined for the type '_BusinessPromotionFormScreenState' • lib/features/admin/presentation/business_promotion_form.dart:21:12 • undefined_method
+  error • The method 'AppBar' isn't defined for the type '_BusinessPromotionFormScreenState' • lib/features/admin/presentation/business_promotion_form.dart:22:15 • undefined_method
+  error • The name 'Text' isn't a class • lib/features/admin/presentation/business_promotion_form.dart:22:35 • creation_with_non_type
+  error • The method 'SingleChildScrollView' isn't defined for the type '_BusinessPromotionFormScreenState' • lib/features/admin/presentation/business_promotion_form.dart:23:13 • undefined_method
+  error • Undefined name 'EdgeInsets' • lib/features/admin/presentation/business_promotion_form.dart:24:24 • undefined_identifier
+  error • The method 'Form' isn't defined for the type '_BusinessPromotionFormScreenState' • lib/features/admin/presentation/business_promotion_form.dart:25:16 • undefined_method
+  error • The method 'Column' isn't defined for the type '_BusinessPromotionFormScreenState' • lib/features/admin/presentation/business_promotion_form.dart:27:18 • undefined_method
+  error • Undefined name 'CrossAxisAlignment' • lib/features/admin/presentation/business_promotion_form.dart:28:33 • undefined_identifier
+  error • The method 'Text' isn't defined for the type '_BusinessPromotionFormScreenState' • lib/features/admin/presentation/business_promotion_form.dart:30:15 • undefined_method
+  error • Undefined name 'Theme' • lib/features/admin/presentation/business_promotion_form.dart:30:50 • undefined_identifier
+  error • Undefined name 'FontWeight' • lib/features/admin/presentation/business_promotion_form.dart:30:114 • undefined_identifier
+  error • The name 'SizedBox' isn't a class • lib/features/admin/presentation/business_promotion_form.dart:31:21 • creation_with_non_type
+  error • The method 'Text' isn't defined for the type '_BusinessPromotionFormScreenState' • lib/features/admin/presentation/business_promotion_form.dart:32:15 • undefined_method
+  error • Undefined name 'Theme' • lib/features/admin/presentation/business_promotion_form.dart:32:111 • undefined_identifier
+  error • The name 'SizedBox' isn't a class • lib/features/admin/presentation/business_promotion_form.dart:33:21 • creation_with_non_type
+  error • The method 'TextFormField' isn't defined for the type '_BusinessPromotionFormScreenState' • lib/features/admin/presentation/business_promotion_form.dart:34:15 • undefined_method
+  error • The name 'InputDecoration' isn't a class • lib/features/admin/presentation/business_promotion_form.dart:35:35 • creation_with_non_type
+  error • The method 'OutlineInputBorder' isn't defined for the type '_BusinessPromotionFormScreenState' • lib/features/admin/presentation/business_promotion_form.dart:35:87 • undefined_method
+  error • The name 'SizedBox' isn't a class • lib/features/admin/presentation/business_promotion_form.dart:38:21 • creation_with_non_type
+  error • The method 'Row' isn't defined for the type '_BusinessPromotionFormScreenState' • lib/features/admin/presentation/business_promotion_form.dart:40:15 • undefined_method
+  error • The method 'Expanded' isn't defined for the type '_BusinessPromotionFormScreenState' • lib/features/admin/presentation/business_promotion_form.dart:42:19 • undefined_method
+  error • The method 'TextFormField' isn't defined for the type '_BusinessPromotionFormScreenState' • lib/features/admin/presentation/business_promotion_form.dart:43:28 • undefined_method
+  error • The name 'InputDecoration' isn't a class • lib/features/admin/presentation/business_promotion_form.dart:44:41 • creation_with_non_type
+  error • The method 'OutlineInputBorder' isn't defined for the type '_BusinessPromotionFormScreenState' • lib/features/admin/presentation/business_promotion_form.dart:44:92 • undefined_method
+  error • The name 'SizedBox' isn't a class • lib/features/admin/presentation/business_promotion_form.dart:48:25 • creation_with_non_type
+  error • The method 'Expanded' isn't defined for the type '_BusinessPromotionFormScreenState' • lib/features/admin/presentation/business_promotion_form.dart:49:19 • undefined_method
+  error • The method 'TextFormField' isn't defined for the type '_BusinessPromotionFormScreenState' • lib/features/admin/presentation/business_promotion_form.dart:50:28 • undefined_method
+  error • The name 'InputDecoration' isn't a class • lib/features/admin/presentation/business_promotion_form.dart:51:41 • creation_with_non_type
+  error • The method 'OutlineInputBorder' isn't defined for the type '_BusinessPromotionFormScreenState' • lib/features/admin/presentation/business_promotion_form.dart:51:93 • undefined_method
+  error • The name 'SizedBox' isn't a class • lib/features/admin/presentation/business_promotion_form.dart:57:21 • creation_with_non_type
+  error • The method 'TextFormField' isn't defined for the type '_BusinessPromotionFormScreenState' • lib/features/admin/presentation/business_promotion_form.dart:58:15 • undefined_method
+  error • The name 'InputDecoration' isn't a class • lib/features/admin/presentation/business_promotion_form.dart:59:35 • creation_with_non_type
+  error • The method 'OutlineInputBorder' isn't defined for the type '_BusinessPromotionFormScreenState' • lib/features/admin/presentation/business_promotion_form.dart:59:94 • undefined_method
+  error • The name 'SizedBox' isn't a class • lib/features/admin/presentation/business_promotion_form.dart:62:21 • creation_with_non_type
+  error • The method 'Container' isn't defined for the type '_BusinessPromotionFormScreenState' • lib/features/admin/presentation/business_promotion_form.dart:63:15 • undefined_method
+  error • Undefined name 'EdgeInsets' • lib/features/admin/presentation/business_promotion_form.dart:65:32 • undefined_identifier
+  error • The method 'BoxDecoration' isn't defined for the type '_BusinessPromotionFormScreenState' • lib/features/admin/presentation/business_promotion_form.dart:66:29 • undefined_method
+  error • Undefined name 'Theme' • lib/features/admin/presentation/business_promotion_form.dart:67:26 • undefined_identifier
+  error • Undefined name 'BorderRadius' • lib/features/admin/presentation/business_promotion_form.dart:68:33 • undefined_identifier
+  error • Undefined name 'Border' • lib/features/admin/presentation/business_promotion_form.dart:69:27 • undefined_identifier
+  error • Undefined name 'Theme' • lib/features/admin/presentation/business_promotion_form.dart:69:73 • undefined_identifier
+  error • Undefined name 'Theme' • lib/features/admin/presentation/business_promotion_form.dart:69:134 • undefined_identifier
+  error • The method 'Row' isn't defined for the type '_BusinessPromotionFormScreenState' • lib/features/admin/presentation/business_promotion_form.dart:71:24 • undefined_method
+  error • The method 'Icon' isn't defined for the type '_BusinessPromotionFormScreenState' • lib/features/admin/presentation/business_promotion_form.dart:73:21 • undefined_method
+  error • Undefined name 'Icons' • lib/features/admin/presentation/business_promotion_form.dart:73:26 • undefined_identifier
+  error • Undefined name 'Colors' • lib/features/admin/presentation/business_promotion_form.dart:73:80 • undefined_identifier
+  error • Undefined name 'Theme' • lib/features/admin/presentation/business_promotion_form.dart:73:93 • undefined_identifier
+  error • The name 'SizedBox' isn't a class • lib/features/admin/presentation/business_promotion_form.dart:74:27 • creation_with_non_type
+  error • The method 'Expanded' isn't defined for the type '_BusinessPromotionFormScreenState' • lib/features/admin/presentation/business_promotion_form.dart:75:21 • undefined_method
+  error • The method 'Column' isn't defined for the type '_BusinessPromotionFormScreenState' • lib/features/admin/presentation/business_promotion_form.dart:76:30 • undefined_method
+  error • Undefined name 'CrossAxisAlignment' • lib/features/admin/presentation/business_promotion_form.dart:77:45 • undefined_identifier
+  error • The method 'Text' isn't defined for the type '_BusinessPromotionFormScreenState' • lib/features/admin/presentation/business_promotion_form.dart:79:27 • undefined_method
+  error • The method 'TextStyle' isn't defined for the type '_BusinessPromotionFormScreenState' • lib/features/admin/presentation/business_promotion_form.dart:79:60 • undefined_method
+  error • Undefined name 'FontWeight' • lib/features/admin/presentation/business_promotion_form.dart:79:82 • undefined_identifier
+  error • Undefined name 'Theme' • lib/features/admin/presentation/business_promotion_form.dart:79:106 • undefined_identifier
+  error • The method 'Text' isn't defined for the type '_BusinessPromotionFormScreenState' • lib/features/admin/presentation/business_promotion_form.dart:81:29 • undefined_method
+  error • Undefined name 'Theme' • lib/features/admin/presentation/business_promotion_form.dart:81:146 • undefined_identifier
+  error • The method 'Text' isn't defined for the type '_BusinessPromotionFormScreenState' • lib/features/admin/presentation/business_promotion_form.dart:83:29 • undefined_method
+  error • The method 'TextStyle' isn't defined for the type '_BusinessPromotionFormScreenState' • lib/features/admin/presentation/business_promotion_form.dart:83:53 • undefined_method
+  error • Undefined name 'Theme' • lib/features/admin/presentation/business_promotion_form.dart:83:70 • undefined_identifier
+  error • Undefined name 'FilledButton' • lib/features/admin/presentation/business_promotion_form.dart:87:21 • undefined_identifier
+  error • Undefined name 'Navigator' • lib/features/admin/presentation/business_promotion_form.dart:89:54 • undefined_identifier
+  error • The method 'MaterialPageRoute' isn't defined for the type '_BusinessPromotionFormScreenState' • lib/features/admin/presentation/business_promotion_form.dart:89:78 • undefined_method
+  error • The method 'setState' isn't defined for the type '_BusinessPromotionFormScreenState' • lib/features/admin/presentation/business_promotion_form.dart:91:27 • undefined_method
+  error • The method 'Text' isn't defined for the type '_BusinessPromotionFormScreenState' • lib/features/admin/presentation/business_promotion_form.dart:94:30 • undefined_method
+  error • The name 'SizedBox' isn't a class • lib/features/admin/presentation/business_promotion_form.dart:99:21 • creation_with_non_type
+  error • The method 'Row' isn't defined for the type '_BusinessPromotionFormScreenState' • lib/features/admin/presentation/business_promotion_form.dart:100:15 • undefined_method
+  error • The method 'Expanded' isn't defined for the type '_BusinessPromotionFormScreenState' • lib/features/admin/presentation/business_promotion_form.dart:102:19 • undefined_method
+  error • The method 'DropdownButtonFormField' isn't defined for the type '_BusinessPromotionFormScreenState' • lib/features/admin/presentation/business_promotion_form.dart:104:28 • undefined_method
+  error • The name 'InputDecoration' isn't a class • lib/features/admin/presentation/business_promotion_form.dart:105:41 • creation_with_non_type
+  error • The method 'OutlineInputBorder' isn't defined for the type '_BusinessPromotionFormScreenState' • lib/features/admin/presentation/business_promotion_form.dart:105:88 • undefined_method
+  error • The method 'DropdownMenuItem' isn't defined for the type '_BusinessPromotionFormScreenState' • lib/features/admin/presentation/business_promotion_form.dart:107:32 • undefined_method
+  error • The method 'Text' isn't defined for the type '_BusinessPromotionFormScreenState' • lib/features/admin/presentation/business_promotion_form.dart:107:68 • undefined_method
+  error • Undefined name 'TextOverflow' • lib/features/admin/presentation/business_promotion_form.dart:107:107 • undefined_identifier
+  error • The method 'setState' isn't defined for the type '_BusinessPromotionFormScreenState' • lib/features/admin/presentation/business_promotion_form.dart:109:43 • undefined_method
+  error • The name 'SizedBox' isn't a class • lib/features/admin/presentation/business_promotion_form.dart:113:25 • creation_with_non_type
+  error • The method 'Expanded' isn't defined for the type '_BusinessPromotionFormScreenState' • lib/features/admin/presentation/business_promotion_form.dart:114:19 • undefined_method
+  error • The method 'DropdownButtonFormField' isn't defined for the type '_BusinessPromotionFormScreenState' • lib/features/admin/presentation/business_promotion_form.dart:116:28 • undefined_method
+  error • The name 'InputDecoration' isn't a class • lib/features/admin/presentation/business_promotion_form.dart:118:41 • creation_with_non_type
+  error • The method 'OutlineInputBorder' isn't defined for the type '_BusinessPromotionFormScreenState' • lib/features/admin/presentation/business_promotion_form.dart:118:85 • undefined_method
+  error • The method 'DropdownMenuItem' isn't defined for the type '_BusinessPromotionFormScreenState' • lib/features/admin/presentation/business_promotion_form.dart:120:32 • undefined_method
+  error • The method 'Text' isn't defined for the type '_BusinessPromotionFormScreenState' • lib/features/admin/presentation/business_promotion_form.dart:120:66 • undefined_method
+  error • The method 'setState' isn't defined for the type '_BusinessPromotionFormScreenState' • lib/features/admin/presentation/business_promotion_form.dart:123:42 • undefined_method
+  error • The name 'SizedBox' isn't a class • lib/features/admin/presentation/business_promotion_form.dart:129:21 • creation_with_non_type
+  error • The method 'DropdownButtonFormField' isn't defined for the type '_BusinessPromotionFormScreenState' • lib/features/admin/presentation/business_promotion_form.dart:130:15 • undefined_method
+  error • The name 'InputDecoration' isn't a class • lib/features/admin/presentation/business_promotion_form.dart:132:35 • creation_with_non_type
+  error • The method 'OutlineInputBorder' isn't defined for the type '_BusinessPromotionFormScreenState' • lib/features/admin/presentation/business_promotion_form.dart:132:88 • undefined_method
+  error • The method 'DropdownMenuItem' isn't defined for the type '_BusinessPromotionFormScreenState' • lib/features/admin/presentation/business_promotion_form.dart:138:26 • undefined_method
+  error • The method 'Text' isn't defined for the type '_BusinessPromotionFormScreenState' • lib/features/admin/presentation/business_promotion_form.dart:138:63 • undefined_method
+  error • The method 'setState' isn't defined for the type '_BusinessPromotionFormScreenState' • lib/features/admin/presentation/business_promotion_form.dart:141:36 • undefined_method
+  error • The name 'SizedBox' isn't a class • lib/features/admin/presentation/business_promotion_form.dart:144:21 • creation_with_non_type
+  error • The method 'TextFormField' isn't defined for the type '_BusinessPromotionFormScreenState' • lib/features/admin/presentation/business_promotion_form.dart:145:15 • undefined_method
+  error • The name 'InputDecoration' isn't a class • lib/features/admin/presentation/business_promotion_form.dart:147:35 • creation_with_non_type
+  error • The method 'OutlineInputBorder' isn't defined for the type '_BusinessPromotionFormScreenState' • lib/features/admin/presentation/business_promotion_form.dart:150:27 • undefined_method
+  error • The name 'SizedBox' isn't a class • lib/features/admin/presentation/business_promotion_form.dart:153:21 • creation_with_non_type
+  error • The method 'InkWell' isn't defined for the type '_BusinessPromotionFormScreenState' • lib/features/admin/presentation/business_promotion_form.dart:155:15 • undefined_method
+  error • Undefined name 'ScaffoldMessenger' • lib/features/admin/presentation/business_promotion_form.dart:157:20 • undefined_identifier
+  error • The name 'SnackBar' isn't a class • lib/features/admin/presentation/business_promotion_form.dart:157:69 • creation_with_non_type
+  error • The method 'Text' isn't defined for the type '_BusinessPromotionFormScreenState' • lib/features/admin/presentation/business_promotion_form.dart:157:87 • undefined_method
+  error • The method 'Container' isn't defined for the type '_BusinessPromotionFormScreenState' • lib/features/admin/presentation/business_promotion_form.dart:159:24 • undefined_method
+  error • The method 'BoxDecoration' isn't defined for the type '_BusinessPromotionFormScreenState' • lib/features/admin/presentation/business_promotion_form.dart:162:31 • undefined_method
+  error • Undefined name 'Theme' • lib/features/admin/presentation/business_promotion_form.dart:163:28 • undefined_identifier
+  error • Undefined name 'BorderRadius' • lib/features/admin/presentation/business_promotion_form.dart:164:35 • undefined_identifier
+  error • Undefined name 'Border' • lib/features/admin/presentation/business_promotion_form.dart:165:29 • undefined_identifier
+  error • Undefined name 'Theme' • lib/features/admin/presentation/business_promotion_form.dart:165:47 • undefined_identifier
+  error • The method 'Column' isn't defined for the type '_BusinessPromotionFormScreenState' • lib/features/admin/presentation/business_promotion_form.dart:167:26 • undefined_method
+  error • Undefined name 'MainAxisAlignment' • lib/features/admin/presentation/business_promotion_form.dart:168:40 • undefined_identifier
+  error • The method 'Icon' isn't defined for the type '_BusinessPromotionFormScreenState' • lib/features/admin/presentation/business_promotion_form.dart:170:23 • undefined_method
+  error • Undefined name 'Icons' • lib/features/admin/presentation/business_promotion_form.dart:170:28 • undefined_identifier
+  error • Undefined name 'Theme' • lib/features/admin/presentation/business_promotion_form.dart:170:64 • undefined_identifier
+  error • The name 'SizedBox' isn't a class • lib/features/admin/presentation/business_promotion_form.dart:171:29 • creation_with_non_type
+  error • The method 'Text' isn't defined for the type '_BusinessPromotionFormScreenState' • lib/features/admin/presentation/business_promotion_form.dart:172:23 • undefined_method
+  error • The method 'TextStyle' isn't defined for the type '_BusinessPromotionFormScreenState' • lib/features/admin/presentation/business_promotion_form.dart:172:60 • undefined_method
+  error • Undefined name 'Theme' • lib/features/admin/presentation/business_promotion_form.dart:172:77 • undefined_identifier
+  error • Undefined name 'FontWeight' • lib/features/admin/presentation/business_promotion_form.dart:172:128 • undefined_identifier
+  error • The name 'SizedBox' isn't a class • lib/features/admin/presentation/business_promotion_form.dart:177:21 • creation_with_non_type
+  error • The method 'SizedBox' isn't defined for the type '_BusinessPromotionFormScreenState' • lib/features/admin/presentation/business_promotion_form.dart:178:15 • undefined_method
+  error • The method 'FilledButton' isn't defined for the type '_BusinessPromotionFormScreenState' • lib/features/admin/presentation/business_promotion_form.dart:180:24 • undefined_method
+  error • Undefined name 'ScaffoldMessenger' • lib/features/admin/presentation/business_promotion_form.dart:183:25 • undefined_identifier
+  error • The name 'SnackBar' isn't a class • lib/features/admin/presentation/business_promotion_form.dart:183:74 • creation_with_non_type
+  error • The method 'Text' isn't defined for the type '_BusinessPromotionFormScreenState' • lib/features/admin/presentation/business_promotion_form.dart:183:92 • undefined_method
+  error • Undefined name 'Colors' • lib/features/admin/presentation/business_promotion_form.dart:183:162 • undefined_identifier
+  error • Undefined name 'ScaffoldMessenger' • lib/features/admin/presentation/business_promotion_form.dart:187:25 • undefined_identifier
+  error • The name 'SnackBar' isn't a class • lib/features/admin/presentation/business_promotion_form.dart:187:74 • creation_with_non_type
+  error • The method 'Text' isn't defined for the type '_BusinessPromotionFormScreenState' • lib/features/admin/presentation/business_promotion_form.dart:187:92 • undefined_method
+  error • The method 'TextStyle' isn't defined for the type '_BusinessPromotionFormScreenState' • lib/features/admin/presentation/business_promotion_form.dart:187:159 • undefined_method
+  error • Undefined name 'Colors' • lib/features/admin/presentation/business_promotion_form.dart:187:176 • undefined_identifier
+  error • Undefined name 'Colors' • lib/features/admin/presentation/business_promotion_form.dart:187:209 • undefined_identifier
+  error • Undefined name 'Navigator' • lib/features/admin/presentation/business_promotion_form.dart:188:25 • undefined_identifier
+  error • The name 'Padding' isn't a class • lib/features/admin/presentation/business_promotion_form.dart:191:32 • creation_with_non_type
+  error • Undefined name 'EdgeInsets' • lib/features/admin/presentation/business_promotion_form.dart:192:30 • undefined_identifier
+  error • The method 'Text' isn't defined for the type '_BusinessPromotionFormScreenState' • lib/features/admin/presentation/business_promotion_form.dart:193:28 • undefined_method
+  error • The method 'TextStyle' isn't defined for the type '_BusinessPromotionFormScreenState' • lib/features/admin/presentation/business_promotion_form.dart:193:58 • undefined_method
+   info • Unnecessary use of multiple underscores • lib/features/admin/presentation/location_picker_screen.dart:27:18 • unnecessary_underscores
+  error • The returned type 'BusinessPromotionFormScreen' isn't returnable from a 'Widget' function, as required by the closure's context • lib/features/destinations/presentation/featured_destinations_screen.dart:90:83 • return_of_invalid_type_from_closure
+  error • Undefined name 'SpotDetailScreen' • lib/features/destinations/presentation/featured_destinations_screen.dart:164:62 • undefined_identifier
+  error • Undefined name 'SpotDetailScreen' • lib/features/destinations/presentation/featured_destinations_screen.dart:238:60 • undefined_identifier
+warning • Unused import: 'package:nepal_explore/features/admin/presentation/admin_review_screen.dart' • lib/features/map/presentation/map_screen.dart:12:8 • unused_import
+warning • The value of the local variable 'pendingSpots' isn't used • lib/features/map/presentation/map_screen.dart:73:11 • unused_local_variable
+   info • Unnecessary use of 'toList' in a spread • lib/features/map/presentation/widgets/spots_list_view.dart:166:16 • unnecessary_to_list_in_spreads
+  error • The property 'length' can't be accessed on the type 'List<double>' in a constant expression • lib/features/spots/presentation/spot_detail_screen.dart:209:48 • const_eval_property_access
+
