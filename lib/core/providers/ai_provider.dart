@@ -15,13 +15,17 @@ final generativeModelProvider = Provider<GenerativeModel?>((ref) {
   );
 });
 
-final aiInsightsProvider = FutureProvider.family<String, TouristSpot>((ref, spot) async {
+final aiInsightsProvider = FutureProvider.family<String, TouristSpot>((
+  ref,
+  spot,
+) async {
   final model = ref.read(generativeModelProvider);
   if (model == null) {
     return 'Detailed AI cultural insights are currently unavailable because the API key is not configured. Please add your Gemini API key in ai_provider.dart.';
   }
 
-  final prompt = '''
+  final prompt =
+      '''
     Provide an engaging cultural context, historical anecdote, local lore, 
     and practical travel tips for a tourist visiting ${spot.name} in Nepal.
     Keep the response concise, visually appealing, and no longer than 3 paragraphs.

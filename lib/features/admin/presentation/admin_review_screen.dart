@@ -22,9 +22,16 @@ class AdminReviewScreen extends ConsumerWidget {
               child: Column(
                 mainAxisAlignment: MainAxisAlignment.center,
                 children: [
-                  Icon(Icons.check_circle_outline, size: 60, color: Colors.green),
+                  Icon(
+                    Icons.check_circle_outline,
+                    size: 60,
+                    color: Colors.green,
+                  ),
                   SizedBox(height: 16),
-                  Text('No pending spots to review!', style: TextStyle(color: Colors.grey)),
+                  Text(
+                    'No pending spots to review!',
+                    style: TextStyle(color: Colors.grey),
+                  ),
                 ],
               ),
             )
@@ -74,17 +81,26 @@ class _ReviewCard extends ConsumerWidget {
                   children: [
                     Text(
                       spot.name,
-                      style: const TextStyle(fontSize: 18, fontWeight: FontWeight.bold),
+                      style: const TextStyle(
+                        fontSize: 18,
+                        fontWeight: FontWeight.bold,
+                      ),
                     ),
                     Container(
-                      padding: const EdgeInsets.symmetric(horizontal: 8, vertical: 4),
+                      padding: const EdgeInsets.symmetric(
+                        horizontal: 8,
+                        vertical: 4,
+                      ),
                       decoration: BoxDecoration(
                         color: Colors.blue.withValues(alpha: 0.1),
                         borderRadius: BorderRadius.circular(8),
                       ),
                       child: Text(
                         spot.category.name,
-                        style: const TextStyle(fontSize: 12, color: Colors.blue),
+                        style: const TextStyle(
+                          fontSize: 12,
+                          color: Colors.blue,
+                        ),
                       ),
                     ),
                   ],
@@ -98,31 +114,43 @@ class _ReviewCard extends ConsumerWidget {
                 ),
                 const SizedBox(height: 4),
                 Text(
-                      'Location: ${spot.location.latitude.toStringAsFixed(4)}, ${spot.location.longitude.toStringAsFixed(4)}',
-                      style: const TextStyle(fontSize: 12, color: Colors.grey),
+                  'Location: ${spot.location.latitude.toStringAsFixed(4)}, ${spot.location.longitude.toStringAsFixed(4)}',
+                  style: const TextStyle(fontSize: 12, color: Colors.grey),
                 ),
                 const SizedBox(height: 20),
                 Row(
                   children: [
                     Expanded(
                       child: OutlinedButton.icon(
-                        onPressed: () {
-                          ref.read(spotsProvider.notifier).rejectSpot(spot.id);
+                        onPressed: () async {
+                          await ref
+                              .read(spotsProvider.notifier)
+                              .rejectSpot(spot.id);
+                          if (!context.mounted) return;
                           ScaffoldMessenger.of(context).showSnackBar(
                             const SnackBar(content: Text('Spot rejected.')),
                           );
                         },
                         icon: const Icon(Icons.close, color: Colors.red),
-                        label: const Text('Reject', style: TextStyle(color: Colors.red)),
+                        label: const Text(
+                          'Reject',
+                          style: TextStyle(color: Colors.red),
+                        ),
                       ),
                     ),
                     const SizedBox(width: 12),
                     Expanded(
                       child: ElevatedButton.icon(
-                        onPressed: () {
-                          ref.read(spotsProvider.notifier).approveSpot(spot.id);
+                        onPressed: () async {
+                          await ref
+                              .read(spotsProvider.notifier)
+                              .approveSpot(spot.id);
+                          if (!context.mounted) return;
                           ScaffoldMessenger.of(context).showSnackBar(
-                            const SnackBar(content: Text('Spot approved!'), backgroundColor: Colors.green),
+                            const SnackBar(
+                              content: Text('Spot approved!'),
+                              backgroundColor: Colors.green,
+                            ),
                           );
                         },
                         icon: const Icon(Icons.check),

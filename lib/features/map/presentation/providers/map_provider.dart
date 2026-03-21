@@ -1,9 +1,12 @@
-import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:flutter_map/flutter_map.dart';
 import 'package:geolocator/geolocator.dart';
-import 'package:nepal_explore/features/spots/domain/tourist_spot.dart';
+import 'package:image_picker/image_picker.dart';
+import 'package:nepal_explore/core/config/app_config.dart';
 import 'package:nepal_explore/features/spots/data/spots_data.dart';
+import 'package:nepal_explore/features/spots/domain/tourist_spot.dart';
+import 'package:nepal_explore/features/spots/data/spots_remote_source.dart';
+import 'package:nepal_explore/features/spots/data/spots_repository.dart';
 
 enum ViewType { map, list }
 
@@ -13,7 +16,9 @@ class ViewTypeNotifier extends Notifier<ViewType> {
   void set(ViewType value) => state = value;
 }
 
-final viewTypeProvider = NotifierProvider<ViewTypeNotifier, ViewType>(ViewTypeNotifier.new);
+final viewTypeProvider = NotifierProvider<ViewTypeNotifier, ViewType>(
+  ViewTypeNotifier.new,
+);
 
 // Current search query
 class SearchQueryNotifier extends Notifier<String> {
@@ -22,7 +27,9 @@ class SearchQueryNotifier extends Notifier<String> {
   void set(String value) => state = value;
 }
 
-final searchQueryProvider = NotifierProvider<SearchQueryNotifier, String>(SearchQueryNotifier.new);
+final searchQueryProvider = NotifierProvider<SearchQueryNotifier, String>(
+  SearchQueryNotifier.new,
+);
 
 // Current bounds filter
 class MapBoundsNotifier extends Notifier<LatLngBounds?> {
@@ -31,7 +38,9 @@ class MapBoundsNotifier extends Notifier<LatLngBounds?> {
   void set(LatLngBounds? bounds) => state = bounds;
 }
 
-final mapBoundsProvider = NotifierProvider<MapBoundsNotifier, LatLngBounds?>(MapBoundsNotifier.new);
+final mapBoundsProvider = NotifierProvider<MapBoundsNotifier, LatLngBounds?>(
+  MapBoundsNotifier.new,
+);
 
 // Current selected category filter
 class CategoryFilterNotifier extends Notifier<SpotCategory?> {
@@ -40,7 +49,10 @@ class CategoryFilterNotifier extends Notifier<SpotCategory?> {
   void set(SpotCategory? value) => state = value;
 }
 
-final categoryFilterProvider = NotifierProvider<CategoryFilterNotifier, SpotCategory?>(CategoryFilterNotifier.new);
+final categoryFilterProvider =
+    NotifierProvider<CategoryFilterNotifier, SpotCategory?>(
+      CategoryFilterNotifier.new,
+    );
 
 // Current selected tourist spot for the bottom sheet
 class SelectedSpotNotifier extends Notifier<TouristSpot?> {
@@ -49,7 +61,10 @@ class SelectedSpotNotifier extends Notifier<TouristSpot?> {
   void set(TouristSpot? value) => state = value;
 }
 
-final selectedSpotProvider = NotifierProvider<SelectedSpotNotifier, TouristSpot?>(SelectedSpotNotifier.new);
+final selectedSpotProvider =
+    NotifierProvider<SelectedSpotNotifier, TouristSpot?>(
+      SelectedSpotNotifier.new,
+    );
 
 // View properties for map
 class MapControllerNotifier extends Notifier<MapController?> {
@@ -58,77 +73,83 @@ class MapControllerNotifier extends Notifier<MapController?> {
   void set(MapController? value) => state = value;
 }
 
-final mapControllerProvider = NotifierProvider<MapControllerNotifier, MapController?>(MapControllerNotifier.new);
+final mapControllerProvider =
+    NotifierProvider<MapControllerNotifier, MapController?>(
+      MapControllerNotifier.new,
+    );
 
-final spotsProvider = NotifierProvider<SpotsNotifier, List<TouristSpot>>(SpotsNotifier.new);
+final spotsRepositoryProvider = Provider<SpotsRepository>(
+  (ref) => SpotsRepository.preview(),
+);
+
+final remoteSourceProvider = Provider<SpotsRemoteSource>((ref) {
+  if (AppConfig.hasSupabaseConfig) {
+    return SupabaseRestSpotsRemoteSource();
+  }
+  return JsonFeedSpotsRemoteSource();
+});
+
+final initialSpotsProvider = Provider<List<TouristSpot>>(
+  (ref) => dummyTouristSpots,
+);
+
+final spotsProvider = NotifierProvider<SpotsNotifier, List<TouristSpot>>(
+  SpotsNotifier.new,
+);
 
 class SpotsNotifier extends Notifier<List<TouristSpot>> {
+  late final SpotsRepository _repository;
+
   @override
-  List<TouristSpot> build() => dummyTouristSpots;
-
-  void addSpot(TouristSpot spot) {
-    state = [...state, spot];
+  List<TouristSpot> build() {
+    _repository = ref.read(spotsRepositoryProvider);
+    return [...ref.read(initialSpotsProvider)];
   }
 
-  void approveSpot(String id) {
-    state = state.map((spot) {
-      if (spot.id == id) {
-        return TouristSpot(
-          id: spot.id,
-          name: spot.name,
-          description: spot.description,
-          location: spot.location,
-          category: spot.category,
-          imageUrl: spot.imageUrl,
-          userImages: spot.userImages,
-          status: ApprovalStatus.approved,
-        );
-      }
-      return spot;
-    }).toList();
+  Future<TouristSpot> addSpot(TouristSpot spot) {
+    return submitSpot(spot);
   }
 
-  void rejectSpot(String id) {
-    state = state.map((spot) {
-      if (spot.id == id) {
-        return TouristSpot(
-          id: spot.id,
-          name: spot.name,
-          description: spot.description,
-          location: spot.location,
-          category: spot.category,
-          imageUrl: spot.imageUrl,
-          userImages: spot.userImages,
-          status: ApprovalStatus.rejected,
-        );
-      }
-      return spot;
-    }).toList();
+  Future<TouristSpot> submitSpot(
+    TouristSpot spot, {
+    List<XFile> images = const [],
+  }) async {
+    final savedSpot = await _repository.submitSpot(spot, images: images);
+    state = [...state, savedSpot];
+    return savedSpot;
   }
 
-  Future<void> syncSpots(BuildContext context) async {
-    // Simulate network delay
-    await Future.delayed(const Duration(seconds: 2));
-    
-    final bool hasNewData = DateTime.now().second % 2 == 0;
-    if (!context.mounted) return;
-    
-    if (hasNewData) {
-      ScaffoldMessenger.of(context).showSnackBar(
-        const SnackBar(content: Text('New data are added to the system!'), backgroundColor: Colors.green, duration: Duration(seconds: 3)),
-      );
-    } else {
-      ScaffoldMessenger.of(context).showSnackBar(
-        const SnackBar(content: Text('No new data available. Everything is up to date.'), duration: Duration(seconds: 3)),
-      );
-    }
+  Future<TouristSpot> approveSpot(String id) async {
+    final updatedSpot = await _repository.updateSpotStatus(
+      id,
+      ApprovalStatus.approved,
+    );
+    state = state.map((spot) => spot.id == id ? updatedSpot : spot).toList();
+    return updatedSpot;
+  }
+
+  Future<TouristSpot> rejectSpot(String id) async {
+    final updatedSpot = await _repository.updateSpotStatus(
+      id,
+      ApprovalStatus.rejected,
+    );
+    state = state.map((spot) => spot.id == id ? updatedSpot : spot).toList();
+    return updatedSpot;
+  }
+
+  Future<SpotsSyncReport> syncSpots() async {
+    final report = await _repository.syncFromServer();
+    state = await _repository.loadSpots();
+    return report;
   }
 }
 
 // Provider for pending spots (for admin)
 final pendingSpotsProvider = Provider<List<TouristSpot>>((ref) {
   final allSpots = ref.watch(spotsProvider);
-  return allSpots.where((spot) => spot.status == ApprovalStatus.pending).toList();
+  return allSpots
+      .where((spot) => spot.status == ApprovalStatus.pending)
+      .toList();
 });
 
 // Provider to get the filtered list of approved tourist spots
@@ -137,24 +158,33 @@ final filteredSpotsProvider = Provider<List<TouristSpot>>((ref) {
   final filter = ref.watch(categoryFilterProvider);
   final searchQuery = ref.watch(searchQueryProvider).toLowerCase();
   final bounds = ref.watch(mapBoundsProvider);
-  
-  var approvedSpots = allSpots.where((spot) => spot.status == ApprovalStatus.approved).toList();
-  
+
+  var approvedSpots = allSpots
+      .where((spot) => spot.status == ApprovalStatus.approved)
+      .toList();
+
   if (filter != null) {
-    approvedSpots = approvedSpots.where((spot) => spot.category == filter).toList();
+    approvedSpots = approvedSpots
+        .where((spot) => spot.category == filter)
+        .toList();
   }
-  
+
   if (bounds != null) {
-    approvedSpots = approvedSpots.where((spot) => bounds.contains(spot.location)).toList();
+    approvedSpots = approvedSpots
+        .where((spot) => bounds.contains(spot.location))
+        .toList();
   }
-  
+
   if (searchQuery.isNotEmpty) {
-    approvedSpots = approvedSpots.where((spot) => 
-      spot.name.toLowerCase().contains(searchQuery) ||
-      spot.description.toLowerCase().contains(searchQuery)
-    ).toList();
+    approvedSpots = approvedSpots
+        .where(
+          (spot) =>
+              spot.name.toLowerCase().contains(searchQuery) ||
+              spot.description.toLowerCase().contains(searchQuery),
+        )
+        .toList();
   }
-  
+
   return approvedSpots;
 });
 
@@ -179,7 +209,8 @@ final userLocationProvider = FutureProvider<Position>((ref) async {
 
   if (permission == LocationPermission.deniedForever) {
     return Future.error(
-        'Location permissions are permanently denied, we cannot request permissions.');
+      'Location permissions are permanently denied, we cannot request permissions.',
+    );
   }
 
   // When we reach here, permissions are granted and we can

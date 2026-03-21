@@ -9,15 +9,15 @@ void main() {
     test('initial state has data', () {
       final container = ProviderContainer();
       final spots = container.read(spotsProvider);
-      
+
       expect(spots, isNotEmpty);
       container.dispose();
     });
 
-    test('addSpot adds a new spot', () {
+    test('addSpot adds a new spot', () async {
       final container = ProviderContainer();
       final previousCount = container.read(spotsProvider).length;
-      
+
       final newSpot = TouristSpot(
         id: '999',
         name: 'Test Spot',
@@ -28,9 +28,9 @@ void main() {
         status: ApprovalStatus.pending,
       );
 
-      container.read(spotsProvider.notifier).addSpot(newSpot);
+      await container.read(spotsProvider.notifier).addSpot(newSpot);
       final spots = container.read(spotsProvider);
-      
+
       expect(spots.length, previousCount + 1);
       expect(spots.last.id, '999');
       container.dispose();

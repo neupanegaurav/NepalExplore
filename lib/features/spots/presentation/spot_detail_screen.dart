@@ -34,8 +34,12 @@ class SpotDetailScreen extends ConsumerWidget {
             backgroundColor: theme.colorScheme.surface,
             flexibleSpace: FlexibleSpaceBar(
               stretchModes: const [StretchMode.zoomBackground],
-              title: Text(spot.name,
-                style: const TextStyle(color: Colors.white, fontWeight: FontWeight.bold, fontSize: 17,
+              title: Text(
+                spot.name,
+                style: const TextStyle(
+                  color: Colors.white,
+                  fontWeight: FontWeight.bold,
+                  fontSize: 17,
                   shadows: [Shadow(color: Colors.black54, blurRadius: 8)],
                 ),
               ),
@@ -45,9 +49,16 @@ class SpotDetailScreen extends ConsumerWidget {
                   Hero(
                     tag: 'spot_image_${spot.id}',
                     child: CachedNetworkImage(
-                      imageUrl: spot.imageUrl, 
+                      imageUrl: spot.imageUrl,
                       fit: BoxFit.cover,
-                      errorWidget: (context, url, error) => Container(color: theme.colorScheme.surfaceContainerHighest, child: const Icon(Icons.broken_image, size: 60, color: Colors.grey)),
+                      errorWidget: (context, url, error) => Container(
+                        color: theme.colorScheme.surfaceContainerHighest,
+                        child: const Icon(
+                          Icons.broken_image,
+                          size: 60,
+                          color: Colors.grey,
+                        ),
+                      ),
                     ),
                   ),
                   // Simple dimming overlay
@@ -66,16 +77,32 @@ class SpotDetailScreen extends ConsumerWidget {
                   Row(
                     children: [
                       Container(
-                        padding: const EdgeInsets.symmetric(horizontal: 12, vertical: 5),
-                        decoration: BoxDecoration(color: AppTheme.primaryColor, borderRadius: BorderRadius.circular(8)),
+                        padding: const EdgeInsets.symmetric(
+                          horizontal: 12,
+                          vertical: 5,
+                        ),
+                        decoration: BoxDecoration(
+                          color: AppTheme.primaryColor,
+                          borderRadius: BorderRadius.circular(8),
+                        ),
                         child: Text(
-                          spot.category.name.replaceAll(RegExp(r'(?<!^)(?=[A-Z])'), ' ').toUpperCase(),
-                          style: const TextStyle(color: Colors.white, fontSize: 11, fontWeight: FontWeight.w600, letterSpacing: 0.5),
+                          spot.category.name
+                              .replaceAll(RegExp(r'(?<!^)(?=[A-Z])'), ' ')
+                              .toUpperCase(),
+                          style: const TextStyle(
+                            color: Colors.white,
+                            fontSize: 11,
+                            fontWeight: FontWeight.w600,
+                            letterSpacing: 0.5,
+                          ),
                         ),
                       ),
                       const Spacer(),
                       Container(
-                        padding: const EdgeInsets.symmetric(horizontal: 10, vertical: 5),
+                        padding: const EdgeInsets.symmetric(
+                          horizontal: 10,
+                          vertical: 5,
+                        ),
                         decoration: BoxDecoration(
                           color: AppTheme.accentOrange.withValues(alpha: 0.12),
                           borderRadius: BorderRadius.circular(8),
@@ -83,9 +110,19 @@ class SpotDetailScreen extends ConsumerWidget {
                         child: const Row(
                           mainAxisSize: MainAxisSize.min,
                           children: [
-                            Icon(Icons.star, color: AppTheme.accentOrange, size: 16),
+                            Icon(
+                              Icons.star,
+                              color: AppTheme.accentOrange,
+                              size: 16,
+                            ),
                             SizedBox(width: 4),
-                            Text('4.8', style: TextStyle(fontWeight: FontWeight.bold, fontSize: 14)),
+                            Text(
+                              '4.8',
+                              style: TextStyle(
+                                fontWeight: FontWeight.bold,
+                                fontSize: 14,
+                              ),
+                            ),
                           ],
                         ),
                       ),
@@ -96,7 +133,13 @@ class SpotDetailScreen extends ConsumerWidget {
                   // Overview
                   Text('Overview', style: theme.textTheme.headlineSmall),
                   const SizedBox(height: 10),
-                  Text(spot.description, style: theme.textTheme.bodyMedium?.copyWith(height: 1.7, color: theme.colorScheme.onSurface.withValues(alpha: 0.7))),
+                  Text(
+                    spot.description,
+                    style: theme.textTheme.bodyMedium?.copyWith(
+                      height: 1.7,
+                      color: theme.colorScheme.onSurface.withValues(alpha: 0.7),
+                    ),
+                  ),
                   const SizedBox(height: 24),
 
                   // AI Insights (flat card)
@@ -113,17 +156,41 @@ class SpotDetailScreen extends ConsumerWidget {
                           children: [
                             Container(
                               padding: const EdgeInsets.all(6),
-                              decoration: BoxDecoration(color: AppTheme.accentPurple.withValues(alpha: 0.15), borderRadius: BorderRadius.circular(8)),
-                              child: const Icon(Icons.auto_awesome, color: AppTheme.accentPurple, size: 18),
+                              decoration: BoxDecoration(
+                                color: AppTheme.accentPurple.withValues(
+                                  alpha: 0.15,
+                                ),
+                                borderRadius: BorderRadius.circular(8),
+                              ),
+                              child: const Icon(
+                                Icons.auto_awesome,
+                                color: AppTheme.accentPurple,
+                                size: 18,
+                              ),
                             ),
                             const SizedBox(width: 10),
-                            Text('AI Insights', style: theme.textTheme.titleMedium?.copyWith(color: AppTheme.accentPurple)),
+                            Text(
+                              'AI Insights',
+                              style: theme.textTheme.titleMedium?.copyWith(
+                                color: AppTheme.accentPurple,
+                              ),
+                            ),
                           ],
                         ),
                         const SizedBox(height: 12),
                         aiInsights.when(
-                          data: (text) => Text(text, style: theme.textTheme.bodyMedium?.copyWith(height: 1.6)),
-                          loading: () => const Center(child: Padding(padding: EdgeInsets.all(16), child: CircularProgressIndicator())),
+                          data: (text) => Text(
+                            text,
+                            style: theme.textTheme.bodyMedium?.copyWith(
+                              height: 1.6,
+                            ),
+                          ),
+                          loading: () => const Center(
+                            child: Padding(
+                              padding: EdgeInsets.all(16),
+                              child: CircularProgressIndicator(),
+                            ),
+                          ),
                           error: (e, s) => const Text('Insights unavailable.'),
                         ),
                       ],
@@ -140,7 +207,9 @@ class SpotDetailScreen extends ConsumerWidget {
                         onPressed: () => _pickImages(context),
                         icon: const Icon(Icons.add_a_photo, size: 16),
                         label: const Text('Upload'),
-                        style: TextButton.styleFrom(foregroundColor: AppTheme.accentPink),
+                        style: TextButton.styleFrom(
+                          foregroundColor: AppTheme.accentPink,
+                        ),
                       ),
                     ],
                   ),
@@ -155,16 +224,26 @@ class SpotDetailScreen extends ConsumerWidget {
                       itemCount: allImages.length,
                       itemBuilder: (context, index) {
                         return GestureDetector(
-                          onTap: () => _openFullScreenGallery(context, allImages, index),
+                          onTap: () =>
+                              _openFullScreenGallery(context, allImages, index),
                           child: Container(
                             width: 140,
                             margin: const EdgeInsets.only(right: 10),
                             clipBehavior: Clip.antiAlias,
-                            decoration: BoxDecoration(borderRadius: BorderRadius.circular(12)),
+                            decoration: BoxDecoration(
+                              borderRadius: BorderRadius.circular(12),
+                            ),
                             child: CachedNetworkImage(
-                              imageUrl: allImages[index], 
+                              imageUrl: allImages[index],
                               fit: BoxFit.cover,
-                              errorWidget: (context, url, error) => Container(color: theme.colorScheme.surfaceContainerHighest, child: const Icon(Icons.broken_image, color: Colors.grey)),
+                              errorWidget: (context, url, error) => Container(
+                                color:
+                                    theme.colorScheme.surfaceContainerHighest,
+                                child: const Icon(
+                                  Icons.broken_image,
+                                  color: Colors.grey,
+                                ),
+                              ),
                             ),
                           ),
                         );
@@ -172,7 +251,10 @@ class SpotDetailScreen extends ConsumerWidget {
                     ),
                   ),
                   // Map Routing
-                  Text('Location & Routing', style: theme.textTheme.headlineSmall),
+                  Text(
+                    'Location & Routing',
+                    style: theme.textTheme.headlineSmall,
+                  ),
                   const SizedBox(height: 16),
                   Container(
                     height: 240,
@@ -180,25 +262,42 @@ class SpotDetailScreen extends ConsumerWidget {
                     clipBehavior: Clip.antiAlias,
                     decoration: BoxDecoration(
                       borderRadius: BorderRadius.circular(16),
-                      border: Border.all(color: theme.colorScheme.outlineVariant),
+                      border: Border.all(
+                        color: theme.colorScheme.outlineVariant,
+                      ),
                     ),
                     child: Consumer(
                       builder: (context, ref, _) {
                         final userLocAsync = ref.watch(userLocationProvider);
                         final destLatLng = spot.location;
-                        
+
                         return userLocAsync.when(
                           data: (userPos) {
-                            final userLatLng = LatLng(userPos.latitude, userPos.longitude);
+                            final userLatLng = LatLng(
+                              userPos.latitude,
+                              userPos.longitude,
+                            );
                             return FlutterMap(
                               options: MapOptions(
-                                initialCameraFit: CameraFit.bounds(bounds: LatLngBounds.fromPoints([userLatLng, destLatLng]), padding: const EdgeInsets.all(40)),
-                                interactionOptions: const InteractionOptions(flags: InteractiveFlag.drag | InteractiveFlag.pinchZoom),
+                                initialCameraFit: CameraFit.bounds(
+                                  bounds: LatLngBounds.fromPoints([
+                                    userLatLng,
+                                    destLatLng,
+                                  ]),
+                                  padding: const EdgeInsets.all(40),
+                                ),
+                                interactionOptions: const InteractionOptions(
+                                  flags:
+                                      InteractiveFlag.drag |
+                                      InteractiveFlag.pinchZoom,
+                                ),
                               ),
                               children: [
                                 TileLayer(
-                                  urlTemplate: 'https://tile.openstreetmap.org/{z}/{x}/{y}.png',
-                                  userAgentPackageName: 'com.example.nepal_explore',
+                                  urlTemplate:
+                                      'https://tile.openstreetmap.org/{z}/{x}/{y}.png',
+                                  userAgentPackageName:
+                                      'com.example.nepal_explore',
                                 ),
                                 PolylineLayer(
                                   polylines: [
@@ -211,15 +310,42 @@ class SpotDetailScreen extends ConsumerWidget {
                                 ),
                                 MarkerLayer(
                                   markers: [
-                                    Marker(point: userLatLng, width: 24, height: 24, child: Container(decoration: const BoxDecoration(color: Colors.blue, shape: BoxShape.circle, border: Border.fromBorderSide(BorderSide(color: Colors.white, width: 2))))),
-                                    Marker(point: destLatLng, width: 40, height: 40, child: const Icon(Icons.location_on, color: AppTheme.accentRed, size: 40)),
+                                    Marker(
+                                      point: userLatLng,
+                                      width: 24,
+                                      height: 24,
+                                      child: Container(
+                                        decoration: const BoxDecoration(
+                                          color: Colors.blue,
+                                          shape: BoxShape.circle,
+                                          border: Border.fromBorderSide(
+                                            BorderSide(
+                                              color: Colors.white,
+                                              width: 2,
+                                            ),
+                                          ),
+                                        ),
+                                      ),
+                                    ),
+                                    Marker(
+                                      point: destLatLng,
+                                      width: 40,
+                                      height: 40,
+                                      child: const Icon(
+                                        Icons.location_on,
+                                        color: AppTheme.accentRed,
+                                        size: 40,
+                                      ),
+                                    ),
                                   ],
                                 ),
                               ],
                             );
                           },
-                          loading: () => const Center(child: CircularProgressIndicator()),
-                          error: (e, s) => const Center(child: Text('Location unavailable')),
+                          loading: () =>
+                              const Center(child: CircularProgressIndicator()),
+                          error: (e, s) =>
+                              const Center(child: Text('Location unavailable')),
                         );
                       },
                     ),
@@ -241,12 +367,17 @@ class SpotDetailScreen extends ConsumerWidget {
         child: FilledButton.icon(
           onPressed: () => _launchNavigation(spot),
           icon: const Icon(Icons.navigation),
-          label: const Text('Navigate Now', style: TextStyle(fontSize: 16, fontWeight: FontWeight.w600)),
+          label: const Text(
+            'Navigate Now',
+            style: TextStyle(fontSize: 16, fontWeight: FontWeight.w600),
+          ),
           style: FilledButton.styleFrom(
             backgroundColor: AppTheme.primaryColor,
             foregroundColor: Colors.white,
             padding: const EdgeInsets.symmetric(vertical: 16),
-            shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(14)),
+            shape: RoundedRectangleBorder(
+              borderRadius: BorderRadius.circular(14),
+            ),
           ),
         ),
       ),
@@ -254,7 +385,8 @@ class SpotDetailScreen extends ConsumerWidget {
   }
 
   Future<void> _launchNavigation(TouristSpot spot) async {
-    final url = 'https://www.google.com/maps/dir/?api=1&destination=${spot.location.latitude},${spot.location.longitude}';
+    final url =
+        'https://www.google.com/maps/dir/?api=1&destination=${spot.location.latitude},${spot.location.longitude}';
     if (await canLaunchUrl(Uri.parse(url))) {
       await launchUrl(Uri.parse(url), mode: LaunchMode.externalApplication);
     }
@@ -265,13 +397,26 @@ class SpotDetailScreen extends ConsumerWidget {
     final images = await picker.pickMultiImage(limit: 5);
     if (images.isNotEmpty && context.mounted) {
       ScaffoldMessenger.of(context).showSnackBar(
-        SnackBar(content: Text('${images.length} photo(s) submitted for review!'), backgroundColor: AppTheme.secondaryColor),
+        SnackBar(
+          content: Text('${images.length} photo(s) submitted for review!'),
+          backgroundColor: AppTheme.secondaryColor,
+        ),
       );
     }
   }
 
-  void _openFullScreenGallery(BuildContext context, List<String> images, int startIndex) {
-    Navigator.push(context, MaterialPageRoute(builder: (_) => _FullScreenGallery(images: images, initialIndex: startIndex)));
+  void _openFullScreenGallery(
+    BuildContext context,
+    List<String> images,
+    int startIndex,
+  ) {
+    Navigator.push(
+      context,
+      MaterialPageRoute(
+        builder: (_) =>
+            _FullScreenGallery(images: images, initialIndex: startIndex),
+      ),
+    );
   }
 }
 
@@ -302,7 +447,10 @@ class _FullScreenGalleryState extends State<_FullScreenGallery> {
       appBar: AppBar(
         backgroundColor: Colors.transparent,
         foregroundColor: Colors.white,
-        title: Text('${_currentIndex + 1} / ${widget.images.length}', style: const TextStyle(color: Colors.white70)),
+        title: Text(
+          '${_currentIndex + 1} / ${widget.images.length}',
+          style: const TextStyle(color: Colors.white70),
+        ),
         centerTitle: true,
       ),
       body: PageView.builder(
@@ -315,9 +463,13 @@ class _FullScreenGalleryState extends State<_FullScreenGallery> {
             maxScale: 4.0,
             child: Center(
               child: CachedNetworkImage(
-                imageUrl: widget.images[index], 
+                imageUrl: widget.images[index],
                 fit: BoxFit.contain,
-                errorWidget: (context, url, error) => const Icon(Icons.broken_image, color: Colors.grey, size: 80),
+                errorWidget: (context, url, error) => const Icon(
+                  Icons.broken_image,
+                  color: Colors.grey,
+                  size: 80,
+                ),
               ),
             ),
           );

@@ -25,8 +25,9 @@ class CategoryFilterRow extends ConsumerWidget {
               label: Text(_getCategoryName(category)),
               selected: isSelected,
               onSelected: (selected) {
-                ref.read(categoryFilterProvider.notifier).set(
-                    selected ? category : null);
+                ref
+                    .read(categoryFilterProvider.notifier)
+                    .set(selected ? category : null);
               },
               backgroundColor: Colors.white,
               selectedColor: colorScheme.primary,
@@ -40,7 +41,9 @@ class CategoryFilterRow extends ConsumerWidget {
               shape: RoundedRectangleBorder(
                 borderRadius: BorderRadius.circular(20),
                 side: BorderSide(
-                  color: isSelected ? Colors.transparent : colorScheme.primary.withValues(alpha: 0.2),
+                  color: isSelected
+                      ? Colors.transparent
+                      : colorScheme.primary.withValues(alpha: 0.2),
                 ),
               ),
             ),
