@@ -3,6 +3,7 @@ import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:url_launcher/url_launcher.dart';
 import 'package:nepal_explore/features/map/presentation/providers/map_provider.dart';
 import 'package:nepal_explore/core/providers/ai_provider.dart';
+import 'package:cached_network_image/cached_network_image.dart';
 import 'package:nepal_explore/features/spots/domain/tourist_spot.dart';
 import 'package:nepal_explore/features/spots/presentation/spot_detail_screen.dart';
 
@@ -80,12 +81,13 @@ class SpotDetailsSheet extends ConsumerWidget {
                     tag: 'spot_image_${selectedSpot.id}',
                     child: ClipRRect(
                       borderRadius: BorderRadius.circular(20.0),
-                      child: Image.network(
-                        selectedSpot.imageUrl,
+                      child: CachedNetworkImage(
+                        imageUrl: selectedSpot.imageUrl,
                         height: 220,
                         width: double.infinity,
                         fit: BoxFit.cover,
-                        errorBuilder: (context, error, stackTrace) => Container(
+                        memCacheWidth: 600,
+                        errorWidget: (context, url, error) => Container(
                           height: 220,
                           color: Theme.of(
                             context,
@@ -183,10 +185,11 @@ class SpotDetailsSheet extends ConsumerWidget {
                             padding: const EdgeInsets.only(right: 8.0),
                             child: ClipRRect(
                               borderRadius: BorderRadius.circular(8.0),
-                              child: Image.network(
-                                selectedSpot.userImages[index],
+                              child: CachedNetworkImage(
+                                imageUrl: selectedSpot.userImages[index],
                                 width: 80,
                                 fit: BoxFit.cover,
+                                memCacheWidth: 200,
                               ),
                             ),
                           );

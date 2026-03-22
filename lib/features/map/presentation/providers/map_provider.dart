@@ -5,8 +5,10 @@ import 'package:image_picker/image_picker.dart';
 import 'package:nepal_explore/core/config/app_config.dart';
 import 'package:nepal_explore/features/spots/data/spots_data.dart';
 import 'package:nepal_explore/features/spots/domain/tourist_spot.dart';
+import 'package:nepal_explore/features/spots/domain/business.dart';
 import 'package:nepal_explore/features/spots/data/spots_remote_source.dart';
 import 'package:nepal_explore/features/spots/data/spots_repository.dart';
+import 'package:nepal_explore/core/database/app_document_database.dart';
 
 enum ViewType { map, list }
 
@@ -78,6 +80,10 @@ final mapControllerProvider =
       MapControllerNotifier.new,
     );
 
+final appDatabaseProvider = Provider<AppDocumentDatabase>((ref) {
+  throw UnimplementedError('appDatabaseProvider must be overridden');
+});
+
 final spotsRepositoryProvider = Provider<SpotsRepository>(
   (ref) => SpotsRepository.preview(),
 );
@@ -92,6 +98,46 @@ final remoteSourceProvider = Provider<SpotsRemoteSource>((ref) {
 final initialSpotsProvider = Provider<List<TouristSpot>>(
   (ref) => dummyTouristSpots,
 );
+
+final businessRepositoryProvider = Provider<BusinessRepository>((ref) {
+  final db = ref.read(appDatabaseProvider);
+  final remote = ref.read(businessRemoteSourceProvider);
+  return BusinessRepository(database: db, remoteSource: remote);
+});
+
+final businessRemoteSourceProvider = Provider<BusinessRemoteSource>((ref) {
+  if (AppConfig.hasSupabaseConfig) {
+    return SupabaseRestBusinessRemoteSource();
+  }
+  return JsonFeedBusinessRemoteSource();
+});
+
+final businessesProvider = AsyncNotifierProvider<BusinessesNotifier, List<Business>>(
+  BusinessesNotifier.new,
+);
+
+class BusinessesNotifier extends AsyncNotifier<List<Business>> {
+  late final BusinessRepository _repository;
+
+  @override
+  Future<List<Business>> build() async {
+    _repository = ref.read(businessRepositoryProvider);
+    final local = await _repository.loadBusinesses();
+    if (local.isEmpty) {
+      await _repository.syncFromServer();
+      return _repository.loadBusinesses();
+    }
+    return local;
+  }
+
+  Future<void> refresh() async {
+    state = const AsyncValue.loading();
+    state = await AsyncValue.guard(() async {
+      await _repository.syncFromServer();
+      return _repository.loadBusinesses();
+    });
+  }
+}
 
 final spotsProvider = NotifierProvider<SpotsNotifier, List<TouristSpot>>(
   SpotsNotifier.new,

@@ -1,0 +1,3042 @@
+[
+  {
+    "name": "Kanchenjunga",
+    "description": "third highest mountain in the world, in Nepal and India",
+    "latitude": 27.7,
+    "longitude": 88.133333,
+    "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Kangchenjunga, India.jpg?width=1000",
+    "category": "mountains",
+    "status": "approved",
+    "is_featured": false
+  },
+  {
+    "name": "Dhaulagiri",
+    "description": "mountain in Nepal",
+    "latitude": 28.696666666667,
+    "longitude": 83.49,
+    "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Dhaulagiri, Himalaya, Nepal.jpg?width=1000",
+    "category": "mountains",
+    "status": "approved",
+    "is_featured": false
+  },
+  {
+    "name": "Lhotse",
+    "description": "mountain in Nepal",
+    "latitude": 27.961666666667,
+    "longitude": 86.933333333333,
+    "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/LhotseMountain.jos.500pix.jpg?width=1000",
+    "category": "mountains",
+    "status": "approved",
+    "is_featured": false
+  },
+  {
+    "name": "Makalu",
+    "description": "mountain in Nepal/China; 5th highest in the world",
+    "latitude": 27.889166666667,
+    "longitude": 87.088611111111,
+    "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Makalu.jpg?width=1000",
+    "category": "mountains",
+    "status": "approved",
+    "is_featured": false
+  },
+  {
+    "name": "Manaslu",
+    "description": "mountain in Nepal; eighth highest mountain in the world",
+    "latitude": 28.55,
+    "longitude": 84.559722222222,
+    "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Mt Manaslu.jpg?width=1000",
+    "category": "mountains",
+    "status": "approved",
+    "is_featured": false
+  },
+  {
+    "name": "Cho Oyu",
+    "description": "mountain in Nepal/China",
+    "latitude": 28.094166666667,
+    "longitude": 86.660833333333,
+    "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/ChoOyu-fromGokyo.jpg?width=1000",
+    "category": "mountains",
+    "status": "approved",
+    "is_featured": false
+  },
+  {
+    "name": "Mount Everest",
+    "description": "Earth's highest mountain above sea level, located in the Mahalangur Himal sub-range of the Himalayas",
+    "latitude": 27.988055555556,
+    "longitude": 86.925,
+    "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Mount Everest as seen from Drukair2 PLW edit.jpg?width=1000",
+    "category": "mountains",
+    "status": "approved",
+    "is_featured": false
+  },
+  {
+    "name": "Tilicho Lake",
+    "description": "lake",
+    "latitude": 28.683333333333,
+    "longitude": 83.856666666667,
+    "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Tilichofotolake.jpg?width=1000",
+    "category": "sceneries",
+    "status": "approved",
+    "is_featured": false
+  },
+  {
+    "name": "Imja Tse",
+    "description": "mountain in Khumbu, Nepal",
+    "latitude": 27.92509,
+    "longitude": 86.93763,
+    "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/ImjaTse.jpg?width=1000",
+    "category": "mountains",
+    "status": "approved",
+    "is_featured": false
+  },
+  {
+    "name": "Baruntse",
+    "description": "mountain in Nepal",
+    "latitude": 27.883333333333,
+    "longitude": 86.983333333333,
+    "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Baruntse wp.jpg?width=1000",
+    "category": "mountains",
+    "status": "approved",
+    "is_featured": false
+  },
+  {
+    "name": "Pashupatinath Temple",
+    "description": "Hindu temple in Kathmandu",
+    "latitude": 27.710495,
+    "longitude": 85.348645,
+    "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/2023 January night aarti at Pashupatinath Temple, Kathmandu 02.jpg?width=1000",
+    "category": "religiousPlaces",
+    "status": "approved",
+    "is_featured": false
+  },
+  {
+    "name": "Cholatse",
+    "description": "mountain",
+    "latitude": 27.92,
+    "longitude": 86.766111111111,
+    "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Cholatse Peak, Nepal, Himalayas.jpg?width=1000",
+    "category": "mountains",
+    "status": "approved",
+    "is_featured": false
+  },
+  {
+    "name": "Cho Polu",
+    "description": "mountain",
+    "latitude": 27.919166666667,
+    "longitude": 86.981944444444,
+    "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/ChoPolu from southwest.jpg?width=1000",
+    "category": "mountains",
+    "status": "approved",
+    "is_featured": false
+  },
+  {
+    "name": "Annapurna II",
+    "description": "mountain",
+    "latitude": 28.53495,
+    "longitude": 84.12219,
+    "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/アンナプルナⅢ、マチャプチャレ8.jpg?width=1000",
+    "category": "mountains",
+    "status": "approved",
+    "is_featured": false
+  },
+  {
+    "name": "Ama Dablam",
+    "description": "mountain in Nepal",
+    "latitude": 27.861111111111,
+    "longitude": 86.861388888889,
+    "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Himalayas, Ama Dablam, Nepal.jpg?width=1000",
+    "category": "mountains",
+    "status": "approved",
+    "is_featured": false
+  },
+  {
+    "name": "Kangtega",
+    "description": "mountain",
+    "latitude": 27.7833,
+    "longitude": 86.8167,
+    "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Machhermo-34-Kangtega-Gipfel-2007-gje.jpg?width=1000",
+    "category": "mountains",
+    "status": "approved",
+    "is_featured": false
+  },
+  {
+    "name": "Annapurna III",
+    "description": "mountain in Nepal",
+    "latitude": 28.58527778,
+    "longitude": 83.99,
+    "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Nepal Annapurna III-Gangapurna-1.jpg?width=1000",
+    "category": "mountains",
+    "status": "approved",
+    "is_featured": false
+  },
+  {
+    "name": "Gyachung Kang",
+    "description": "mountain in Nepal/China",
+    "latitude": 28.098055555556,
+    "longitude": 86.742222222222,
+    "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Gyachung Kang.jpg?width=1000",
+    "category": "mountains",
+    "status": "approved",
+    "is_featured": false
+  },
+  {
+    "name": "Bardiya National Park",
+    "description": "national park",
+    "latitude": 28.47,
+    "longitude": 81.47,
+    "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Bardia National Park.JPG?width=1000",
+    "category": "natureTrails",
+    "status": "approved",
+    "is_featured": false
+  },
+  {
+    "name": "Makalu Barun National Park",
+    "description": "national park of Nepal",
+    "latitude": 27.75693134,
+    "longitude": 87.11362679,
+    "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Makalu Barun National Park, Nepal. - panoramio.jpg?width=1000",
+    "category": "natureTrails",
+    "status": "approved",
+    "is_featured": false
+  },
+  {
+    "name": "Pokalde",
+    "description": "mountain in Nepal",
+    "latitude": 27.925,
+    "longitude": 86.833333333333,
+    "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Khumbu Gletscher vom Lobuche Pass.JPG?width=1000",
+    "category": "mountains",
+    "status": "approved",
+    "is_featured": false
+  },
+  {
+    "name": "Machhapuchhre",
+    "description": "mountain",
+    "latitude": 28.495,
+    "longitude": 83.949166666667,
+    "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Ghorepani-Tadapani-34-Machhapuchhre-2013-gje.jpg?width=1000",
+    "category": "mountains",
+    "status": "approved",
+    "is_featured": false
+  },
+  {
+    "name": "Chamlang",
+    "description": "mountain",
+    "latitude": 27.775833333333,
+    "longitude": 86.98,
+    "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Mount Everest as seen from Drukair2.jpg?width=1000",
+    "category": "mountains",
+    "status": "approved",
+    "is_featured": false
+  },
+  {
+    "name": "Kabru",
+    "description": "mountain of the Himalayas",
+    "latitude": 27.635,
+    "longitude": 88.11833333,
+    "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Kalimpong 28.jpg?width=1000",
+    "category": "mountains",
+    "status": "approved",
+    "is_featured": false
+  },
+  {
+    "name": "Shivapuri Nagarjun National Park",
+    "description": "national park of Nepal",
+    "latitude": 27.795,
+    "longitude": 85.39,
+    "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Shivapuri Nagarjun National Park (Wide Gate and Board).jpg?width=1000",
+    "category": "natureTrails",
+    "status": "approved",
+    "is_featured": false
+  },
+  {
+    "name": "Hiunchuli",
+    "description": "mountain in Nepal",
+    "latitude": 28.510277777778,
+    "longitude": 83.851944444444,
+    "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Annapurna-south-and-hiunchuli.jpg?width=1000",
+    "category": "mountains",
+    "status": "approved",
+    "is_featured": false
+  },
+  {
+    "name": "Phoksundo Lake",
+    "description": "lake in Dolpa District, Nepal",
+    "latitude": 29.2,
+    "longitude": 82.952222222222,
+    "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Panorama phoksumdo lake from camp.jpg?width=1000",
+    "category": "sceneries",
+    "status": "approved",
+    "is_featured": false
+  },
+  {
+    "name": "Shey Phoksundo National Park",
+    "description": "national park in Karnali Province, Nepal",
+    "latitude": 29.3581,
+    "longitude": 82.8456,
+    "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Panorama phoksumdo lake from camp.jpg?width=1000",
+    "category": "natureTrails",
+    "status": "approved",
+    "is_featured": false
+  },
+  {
+    "name": "Rupa Lake",
+    "description": "freshwater lake in Nepal",
+    "latitude": 28.14861111,
+    "longitude": 84.11111111,
+    "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Rupa lake.jpg?width=1000",
+    "category": "sceneries",
+    "status": "approved",
+    "is_featured": false
+  },
+  {
+    "name": "Begnas Lake",
+    "description": "lake in Kaski District, Nepal",
+    "latitude": 28.171666666667,
+    "longitude": 84.1,
+    "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Rishav Adhikari Begnastal 4.jpg?width=1000",
+    "category": "sceneries",
+    "status": "approved",
+    "is_featured": false
+  },
+  {
+    "name": "Rara National Park",
+    "description": "national park in Karnali Province, Nepal",
+    "latitude": 29.491666666667,
+    "longitude": 82.072222222222,
+    "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Rara lake from afar.jpg?width=1000",
+    "category": "natureTrails",
+    "status": "approved",
+    "is_featured": false
+  },
+  {
+    "name": "Banke National Park",
+    "description": "national park of Nepal",
+    "latitude": 28.1911,
+    "longitude": 81.9128,
+    "image_url": "https://placehold.co/600x400?text=No+Image",
+    "category": "natureTrails",
+    "status": "approved",
+    "is_featured": false
+  },
+  {
+    "name": "Dorje Lhakpa",
+    "description": "mountain in Jugal Himal, Nepal",
+    "latitude": 28.17432,
+    "longitude": 85.77953,
+    "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Dorje-lakpa.jpg?width=1000",
+    "category": "mountains",
+    "status": "approved",
+    "is_featured": false
+  },
+  {
+    "name": "Tharpu Chuli",
+    "description": "mountain in Nepal",
+    "latitude": 28.56166667,
+    "longitude": 83.89027778,
+    "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Tharpu Chuli Summit.jpg?width=1000",
+    "category": "mountains",
+    "status": "approved",
+    "is_featured": false
+  },
+  {
+    "name": "Yala Peak",
+    "description": "mountain in Nepal",
+    "latitude": 28.2286,
+    "longitude": 85.628,
+    "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Yala-peak.jpg?width=1000",
+    "category": "mountains",
+    "status": "approved",
+    "is_featured": false
+  },
+  {
+    "name": "Khartaphu",
+    "description": "mountain in Tibet, China",
+    "latitude": 28.0625,
+    "longitude": 86.9775,
+    "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Everest Peace Project - Ice serac everest tibet2.jpg?width=1000",
+    "category": "mountains",
+    "status": "approved",
+    "is_featured": false
+  },
+  {
+    "name": "Nilgiri Himal",
+    "description": "mountain in Nepal",
+    "latitude": 28.689166666667,
+    "longitude": 83.746666666667,
+    "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Nilgiri North (7061 m) - Nepal - panoramio.jpg?width=1000",
+    "category": "mountains",
+    "status": "approved",
+    "is_featured": false
+  },
+  {
+    "name": "Gokyo Ri",
+    "description": "mountain in Nepal",
+    "latitude": 27.961111111111,
+    "longitude": 86.683333333333,
+    "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Gokyo Ri, Nepal, Himalayas.jpg?width=1000",
+    "category": "mountains",
+    "status": "approved",
+    "is_featured": false
+  },
+  {
+    "name": "Khatung Kang",
+    "description": "mountain in Nepal",
+    "latitude": 28.777222222222,
+    "longitude": 83.919444444444,
+    "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Khatung Kang from Manang.jpg?width=1000",
+    "category": "mountains",
+    "status": "approved",
+    "is_featured": false
+  },
+  {
+    "name": "Kirat Chuli",
+    "description": "mountain in the HImalayas",
+    "latitude": 27.786944444444,
+    "longitude": 88.194444444444,
+    "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/NepalPeak TentPeak.jpg?width=1000",
+    "category": "mountains",
+    "status": "approved",
+    "is_featured": false
+  },
+  {
+    "name": "Nangpai Gosum",
+    "description": "mountain in the Himalayas",
+    "latitude": 28.06666667,
+    "longitude": 86.6,
+    "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Cho Oyu, Nepal.jpg?width=1000",
+    "category": "mountains",
+    "status": "approved",
+    "is_featured": false
+  },
+  {
+    "name": "Langtang National Park",
+    "description": "National park of Nepal",
+    "latitude": 28.1738,
+    "longitude": 85.5531,
+    "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Starry night in Langtang National Park.jpg?width=1000",
+    "category": "natureTrails",
+    "status": "approved",
+    "is_featured": false
+  },
+  {
+    "name": "Parsa National Park",
+    "description": "national park of Nepal",
+    "latitude": 27.46666667,
+    "longitude": 84.33333333,
+    "image_url": "https://placehold.co/600x400?text=No+Image",
+    "category": "natureTrails",
+    "status": "approved",
+    "is_featured": false
+  },
+  {
+    "name": "Q4517942",
+    "description": "mountain in Nepal",
+    "latitude": 28.735833333333,
+    "longitude": 84.036111111111,
+    "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Chulu view from west.jpg?width=1000",
+    "category": "mountains",
+    "status": "approved",
+    "is_featured": false
+  },
+  {
+    "name": "Yakawa Kang",
+    "description": "mountain in Nepal",
+    "latitude": 28.807777777778,
+    "longitude": 83.9425,
+    "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Thorong La pass.jpg?width=1000",
+    "category": "mountains",
+    "status": "approved",
+    "is_featured": false
+  },
+  {
+    "name": "Saipal",
+    "description": "mountain in Nepal",
+    "latitude": 29.890833333333,
+    "longitude": 81.495,
+    "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Mt Saipal.png?width=1000",
+    "category": "mountains",
+    "status": "approved",
+    "is_featured": false
+  },
+  {
+    "name": "Salasungo",
+    "description": "mountain on the China–Nepal border",
+    "latitude": 28.335,
+    "longitude": 85.121666666667,
+    "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Ganesh himal.JPG?width=1000",
+    "category": "mountains",
+    "status": "approved",
+    "is_featured": false
+  },
+  {
+    "name": "Api",
+    "description": "mountain in Darchula District, Nepal",
+    "latitude": 30.005277777778,
+    "longitude": 80.929722222222,
+    "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Api Nampa.JPG?width=1000",
+    "category": "mountains",
+    "status": "approved",
+    "is_featured": false
+  },
+  {
+    "name": "Baden-Powell Peak",
+    "description": "mountain in Nepal",
+    "latitude": 28.16757,
+    "longitude": 85.53337,
+    "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Baden Powell Peak.JPG?width=1000",
+    "category": "mountains",
+    "status": "approved",
+    "is_featured": false
+  },
+  {
+    "name": "Chitwan National Park",
+    "description": "national park of Nepal",
+    "latitude": 27.5,
+    "longitude": 84.333333,
+    "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Chitwan swamp.jpg?width=1000",
+    "category": "natureTrails",
+    "status": "approved",
+    "is_featured": false
+  },
+  {
+    "name": "Gangapurna",
+    "description": "mountain",
+    "latitude": 28.6054,
+    "longitude": 83.96336,
+    "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Gangapurna.JPG?width=1000",
+    "category": "mountains",
+    "status": "approved",
+    "is_featured": false
+  },
+  {
+    "name": "Pumori",
+    "description": "Himalayan mountain (PRC / Nepal)",
+    "latitude": 28.015555555556,
+    "longitude": 86.828055555556,
+    "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Pumori, Nepal, Asia.jpg?width=1000",
+    "category": "mountains",
+    "status": "approved",
+    "is_featured": false
+  },
+  {
+    "name": "Nuptse",
+    "description": "mountain in Himalaya",
+    "latitude": 27.966388888889,
+    "longitude": 86.89,
+    "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Nuptse, Nepal, Himalayas.jpg?width=1000",
+    "category": "mountains",
+    "status": "approved",
+    "is_featured": false
+  },
+  {
+    "name": "Himalchuli",
+    "description": "mountain",
+    "latitude": 28.436111111111,
+    "longitude": 84.639444444444,
+    "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Himalchuli from south.jpg?width=1000",
+    "category": "mountains",
+    "status": "approved",
+    "is_featured": false
+  },
+  {
+    "name": "Phewa Lake",
+    "description": "lake in Kaski District, Nepal",
+    "latitude": 28.214166666667,
+    "longitude": 83.947222222222,
+    "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Annapurna Range and the Phewa Lake.jpg?width=1000",
+    "category": "sceneries",
+    "status": "approved",
+    "is_featured": false
+  },
+  {
+    "name": "Dhaulagiri II",
+    "description": "mountain",
+    "latitude": 28.76299,
+    "longitude": 83.38795,
+    "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/DhaulagiriMountain.jos.500pix.jpg?width=1000",
+    "category": "mountains",
+    "status": "approved",
+    "is_featured": false
+  },
+  {
+    "name": "Jannu",
+    "description": "mountain of the Himalayas",
+    "latitude": 27.666666666667,
+    "longitude": 88.033333333333,
+    "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Jannu from South.jpg?width=1000",
+    "category": "mountains",
+    "status": "approved",
+    "is_featured": false
+  },
+  {
+    "name": "Lobuche",
+    "description": "mountain in Khumbu, Nepal",
+    "latitude": 27.9595,
+    "longitude": 86.789944444444,
+    "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Lobuche East from the southeast.jpg?width=1000",
+    "category": "mountains",
+    "status": "approved",
+    "is_featured": false
+  },
+  {
+    "name": "Putha Hiunchuli",
+    "description": "mountain in Nepal",
+    "latitude": 28.7475,
+    "longitude": 83.14583333,
+    "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Himalayan Horizon From Space.jpg?width=1000",
+    "category": "mountains",
+    "status": "approved",
+    "is_featured": false
+  },
+  {
+    "name": "Thamserku",
+    "description": "mountain in Nepal",
+    "latitude": 27.790277777778,
+    "longitude": 86.7875,
+    "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Thamserku.JPG?width=1000",
+    "category": "mountains",
+    "status": "approved",
+    "is_featured": false
+  },
+  {
+    "name": "Num Ri",
+    "description": "mountain",
+    "latitude": 27.894722,
+    "longitude": 86.970833,
+    "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Numri.jpg?width=1000",
+    "category": "mountains",
+    "status": "approved",
+    "is_featured": false
+  },
+  {
+    "name": "Mera Peak",
+    "description": "mountain in Nepal",
+    "latitude": 27.7,
+    "longitude": 86.866666666667,
+    "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Mera Peak Zatr La.JPG?width=1000",
+    "category": "mountains",
+    "status": "approved",
+    "is_featured": false
+  },
+  {
+    "name": "Gauri Sankar",
+    "description": "mountain in Nepal and Tibet",
+    "latitude": 27.953333333333,
+    "longitude": 86.335833333333,
+    "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Mount Gauri Shankar.jpg?width=1000",
+    "category": "mountains",
+    "status": "approved",
+    "is_featured": false
+  },
+  {
+    "name": "Kala Patthar",
+    "description": "landmark located on the south ridge of Pumori in the Nepalese Himalayas",
+    "latitude": 27.995833333333,
+    "longitude": 86.828416666667,
+    "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Pumori and kalapathar.jpg?width=1000",
+    "category": "mountains",
+    "status": "approved",
+    "is_featured": false
+  },
+  {
+    "name": "Peak 38",
+    "description": "mountain",
+    "latitude": 27.95578,
+    "longitude": 86.96451,
+    "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Mount Everest as seen from Drukair2 PLW edit.jpg?width=1000",
+    "category": "mountains",
+    "status": "approved",
+    "is_featured": false
+  },
+  {
+    "name": "Langtang Lirung",
+    "description": "mountain",
+    "latitude": 28.256111111111,
+    "longitude": 85.519444444444,
+    "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Langtang-lirung-and-kimshung.jpg?width=1000",
+    "category": "mountains",
+    "status": "approved",
+    "is_featured": false
+  },
+  {
+    "name": "Shuklaphanta National Park",
+    "description": "national park in Nepal",
+    "latitude": 28.8402,
+    "longitude": 80.229,
+    "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Ranitaal1.JPG?width=1000",
+    "category": "natureTrails",
+    "status": "approved",
+    "is_featured": false
+  },
+  {
+    "name": "Kang Guru",
+    "description": "mountain in Nepal",
+    "latitude": 28.6575,
+    "longitude": 84.301388888889,
+    "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Manaslu-Circuit Pass.jpg?width=1000",
+    "category": "mountains",
+    "status": "approved",
+    "is_featured": false
+  },
+  {
+    "name": "Kangbachen",
+    "description": "secondary summit on Kanchenjunga",
+    "latitude": 27.7166,
+    "longitude": 88.1105,
+    "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Kangchenjunga PangPema.JPG?width=1000",
+    "category": "mountains",
+    "status": "approved",
+    "is_featured": false
+  },
+  {
+    "name": "Mount Khumbila",
+    "description": "mountain in Nepal",
+    "latitude": 27.84841,
+    "longitude": 86.70934,
+    "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Khumabi-Yul-Lha.jpg?width=1000",
+    "category": "mountains",
+    "status": "approved",
+    "is_featured": false
+  },
+  {
+    "name": "Ngadi Chuli",
+    "description": "Ngadi Chuli is a high peak in the Mansiri Himal",
+    "latitude": 28.503333333333,
+    "longitude": 84.568611111111,
+    "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Manaslu - Thulagi Chuli - Ngadi Chuli.jpg?width=1000",
+    "category": "mountains",
+    "status": "approved",
+    "is_featured": false
+  },
+  {
+    "name": "Kongde Ri",
+    "description": "mountain in Nepal",
+    "latitude": 27.791944444444,
+    "longitude": 86.648333333333,
+    "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Kongde Ri massive.JPG?width=1000",
+    "category": "mountains",
+    "status": "approved",
+    "is_featured": false
+  },
+  {
+    "name": "Kusum Kanguru",
+    "description": "mountain in Nepal",
+    "latitude": 27.730555555556,
+    "longitude": 86.790833333333,
+    "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Mera Peak 9925.JPG?width=1000",
+    "category": "mountains",
+    "status": "approved",
+    "is_featured": false
+  },
+  {
+    "name": "Singu Chuli",
+    "description": "mountain in Nepal",
+    "latitude": 28.583333333333,
+    "longitude": 83.9,
+    "image_url": "https://placehold.co/600x400?text=No+Image",
+    "category": "mountains",
+    "status": "approved",
+    "is_featured": false
+  },
+  {
+    "name": "Taboche",
+    "description": "mountain in Nepal",
+    "latitude": 27.8975,
+    "longitude": 86.779166666667,
+    "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Taboche Peak.jpg?width=1000",
+    "category": "mountains",
+    "status": "approved",
+    "is_featured": false
+  },
+  {
+    "name": "Imja Tsho",
+    "description": "lake in Nepal",
+    "latitude": 27.8986,
+    "longitude": 86.9222,
+    "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Imja-Lake.jpg?width=1000",
+    "category": "sceneries",
+    "status": "approved",
+    "is_featured": false
+  },
+  {
+    "name": "Khaptad national park",
+    "description": "national park of nepal",
+    "latitude": 29.27,
+    "longitude": 80.99,
+    "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Khaptadnationalpark.jpg?width=1000",
+    "category": "natureTrails",
+    "status": "approved",
+    "is_featured": false
+  },
+  {
+    "name": "Lingtren",
+    "description": "Himalayan mountain",
+    "latitude": 28.0167,
+    "longitude": 86.85,
+    "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Lingtren.jpg?width=1000",
+    "category": "mountains",
+    "status": "approved",
+    "is_featured": false
+  },
+  {
+    "name": "Rara Lake",
+    "description": "lake in Mugu District, Nepal",
+    "latitude": 29.525722222222,
+    "longitude": 82.090211111111,
+    "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Rara lake, Murma top.jpg?width=1000",
+    "category": "sceneries",
+    "status": "approved",
+    "is_featured": false
+  },
+  {
+    "name": "Tilicho Peak",
+    "description": "mountain in Nepal",
+    "latitude": 28.684444444444,
+    "longitude": 83.804444444444,
+    "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Tilicho Peak.jpg?width=1000",
+    "category": "mountains",
+    "status": "approved",
+    "is_featured": false
+  },
+  {
+    "name": "Sagarmatha National Park",
+    "description": "national park in Nepal",
+    "latitude": 27.891069,
+    "longitude": 86.693033,
+    "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Everest, Nuptse, Khumbu Glacier, Nepal, Himalayas.jpg?width=1000",
+    "category": "natureTrails",
+    "status": "approved",
+    "is_featured": false
+  },
+  {
+    "name": "Nirekha",
+    "description": "mountain in Khumbu, Nepal",
+    "latitude": 27.97747803,
+    "longitude": 86.76270294,
+    "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Everest, Lhotse and Makalu from Gokyo Ri.jpg?width=1000",
+    "category": "mountains",
+    "status": "approved",
+    "is_featured": false
+  },
+  {
+    "name": "Gimmigela Chuli",
+    "description": "Mountain in Nepal and Sikkim",
+    "latitude": 27.74,
+    "longitude": 88.15777778,
+    "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Gimmigela Chuli.jpg?width=1000",
+    "category": "mountains",
+    "status": "approved",
+    "is_featured": false
+  },
+  {
+    "name": "Lhotse Shar",
+    "description": "mountain in the Himalayas",
+    "latitude": 27.958333333333,
+    "longitude": 86.943333333333,
+    "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/LhotseMountain.jos.500pix.jpg?width=1000",
+    "category": "mountains",
+    "status": "approved",
+    "is_featured": false
+  },
+  {
+    "name": "Langtang Ri",
+    "description": "mountain at the border Nepal / China (Tibet)",
+    "latitude": 28.3814,
+    "longitude": 85.6836,
+    "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/ShishapangmaandGangBenchen.jpg?width=1000",
+    "category": "mountains",
+    "status": "approved",
+    "is_featured": false
+  },
+  {
+    "name": "Kyashar",
+    "description": "mountain in Nepal",
+    "latitude": 27.754987,
+    "longitude": 86.822811,
+    "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Mera Peak 9925.JPG?width=1000",
+    "category": "mountains",
+    "status": "approved",
+    "is_featured": false
+  },
+  {
+    "name": "Lobuche East",
+    "description": "peak in the Himalayas",
+    "latitude": 27.958356,
+    "longitude": 86.790931,
+    "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Lobuche East from the southeast.jpg?width=1000",
+    "category": "mountains",
+    "status": "approved",
+    "is_featured": false
+  },
+  {
+    "name": "Peak 41",
+    "description": "mountain in Nepal",
+    "latitude": 27.774256,
+    "longitude": 86.908738,
+    "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Nepal - Island Peak - 006 - Sunrise on Peak 41 from Island Peak (497819067).jpg?width=1000",
+    "category": "mountains",
+    "status": "approved",
+    "is_featured": false
+  },
+  {
+    "name": "Taudaha Lake",
+    "description": "lake in Nepal",
+    "latitude": 27.6487,
+    "longitude": 85.282,
+    "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/View of Taudaha Lake.jpg?width=1000",
+    "category": "sceneries",
+    "status": "approved",
+    "is_featured": false
+  },
+  {
+    "name": "Takargo",
+    "description": "mountain in Nepal",
+    "latitude": 27.875578,
+    "longitude": 86.509169,
+    "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Takargo.jpg?width=1000",
+    "category": "mountains",
+    "status": "approved",
+    "is_featured": false
+  },
+  {
+    "name": "Q20999752",
+    "description": "",
+    "latitude": 28.7665,
+    "longitude": 83.098165,
+    "image_url": "https://placehold.co/600x400?text=No+Image",
+    "category": "mountains",
+    "status": "approved",
+    "is_featured": false
+  },
+  {
+    "name": "Ghustang",
+    "description": "",
+    "latitude": 28.680091,
+    "longitude": 83.245258,
+    "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/South face of Dhaulagiri Himal (48).jpg?width=1000",
+    "category": "mountains",
+    "status": "approved",
+    "is_featured": false
+  },
+  {
+    "name": "Gurkarpo Ri",
+    "description": "mountain in Nepal and China",
+    "latitude": 28.20928,
+    "longitude": 85.77748,
+    "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Shishapangma5.jpg?width=1000",
+    "category": "mountains",
+    "status": "approved",
+    "is_featured": false
+  },
+  {
+    "name": "Q20999970",
+    "description": "",
+    "latitude": 28.842759,
+    "longitude": 83.497393,
+    "image_url": "https://placehold.co/600x400?text=No+Image",
+    "category": "mountains",
+    "status": "approved",
+    "is_featured": false
+  },
+  {
+    "name": "Q20999992",
+    "description": "mountain in Nepal",
+    "latitude": 29.411871,
+    "longitude": 82.558904,
+    "image_url": "https://placehold.co/600x400?text=No+Image",
+    "category": "mountains",
+    "status": "approved",
+    "is_featured": false
+  },
+  {
+    "name": "Q21000062",
+    "description": "",
+    "latitude": 28.532029,
+    "longitude": 85.166341,
+    "image_url": "https://placehold.co/600x400?text=No+Image",
+    "category": "mountains",
+    "status": "approved",
+    "is_featured": false
+  },
+  {
+    "name": "Pemthang Karpo Ri",
+    "description": "",
+    "latitude": 28.249206,
+    "longitude": 85.748201,
+    "image_url": "https://placehold.co/600x400?text=No+Image",
+    "category": "mountains",
+    "status": "approved",
+    "is_featured": false
+  },
+  {
+    "name": "Kokthang",
+    "description": "mountain in the Himalayas",
+    "latitude": 27.564247,
+    "longitude": 88.080535,
+    "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Kokthang.jpg?width=1000",
+    "category": "mountains",
+    "status": "approved",
+    "is_featured": false
+  },
+  {
+    "name": "Chamar",
+    "description": "mountain in Nepal",
+    "latitude": 28.55527778,
+    "longitude": 84.94527778,
+    "image_url": "https://placehold.co/600x400?text=No+Image",
+    "category": "mountains",
+    "status": "approved",
+    "is_featured": false
+  },
+  {
+    "name": "Gaṇesh Kuṇḍ",
+    "description": "lake in Nepal, Nepal",
+    "latitude": 28.124444444444,
+    "longitude": 85.468611111111,
+    "image_url": "https://placehold.co/600x400?text=No+Image",
+    "category": "sceneries",
+    "status": "approved",
+    "is_featured": false
+  },
+  {
+    "name": "Indra Sarowar Lake",
+    "description": "Lake situated in Makawanpur District",
+    "latitude": 27.60092,
+    "longitude": 85.15977,
+    "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Indra Sarowar, Markhu, Kulekhani Nepal 13.jpg?width=1000",
+    "category": "sceneries",
+    "status": "approved",
+    "is_featured": false
+  },
+  {
+    "name": "Kālo Pokhari̇̄",
+    "description": "lake in Nepal, Nepal",
+    "latitude": 28.2925,
+    "longitude": 85.170277777778,
+    "image_url": "https://placehold.co/600x400?text=No+Image",
+    "category": "sceneries",
+    "status": "approved",
+    "is_featured": false
+  },
+  {
+    "name": "Q49300502",
+    "description": "lake in Nepal, Nepal",
+    "latitude": 27.861388888889,
+    "longitude": 86.477222222222,
+    "image_url": "https://placehold.co/600x400?text=No+Image",
+    "category": "sceneries",
+    "status": "approved",
+    "is_featured": false
+  },
+  {
+    "name": "Q49309502",
+    "description": "lake in Nepal, Nepal",
+    "latitude": 28.151944444444,
+    "longitude": 84.113055555556,
+    "image_url": "https://placehold.co/600x400?text=No+Image",
+    "category": "sceneries",
+    "status": "approved",
+    "is_featured": false
+  },
+  {
+    "name": "Annapurna I",
+    "description": "mountain in the Himalayas",
+    "latitude": 28.5958,
+    "longitude": 83.82,
+    "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Annapurna I.jpg?width=1000",
+    "category": "mountains",
+    "status": "approved",
+    "is_featured": false
+  },
+  {
+    "name": "Tenzing Peak",
+    "description": "mountain peak in the Himalayas",
+    "latitude": 28.105875,
+    "longitude": 86.684203,
+    "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Cho Oyu.jpg?width=1000",
+    "category": "mountains",
+    "status": "approved",
+    "is_featured": false
+  },
+  {
+    "name": "Kanjiroba Himal",
+    "description": "mountain in Nepal",
+    "latitude": 29.3918,
+    "longitude": 82.7528,
+    "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Mt. Kanjiroba.jpg?width=1000",
+    "category": "mountains",
+    "status": "approved",
+    "is_featured": false
+  },
+  {
+    "name": "Mardi Himal",
+    "description": "mountain in Nepal",
+    "latitude": 28.47363,
+    "longitude": 83.92756,
+    "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Poh092-Treking na Mardi Himal.jpg?width=1000",
+    "category": "mountains",
+    "status": "approved",
+    "is_featured": false
+  },
+  {
+    "name": "Khaste lake",
+    "description": "lake at Kaski,Nepal",
+    "latitude": 28.194444444444,
+    "longitude": 84.05,
+    "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Khste.jpg?width=1000",
+    "category": "sceneries",
+    "status": "approved",
+    "is_featured": false
+  },
+  {
+    "name": "Jamunkhadi Simsar",
+    "description": "tourist attractions in Mechi zone, Nepal",
+    "latitude": 26.52,
+    "longitude": 87.47,
+    "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Jamun khadi simsar.JPG?width=1000",
+    "category": "historicalSites",
+    "status": "approved",
+    "is_featured": false
+  },
+  {
+    "name": "Panch Pokhari",
+    "description": "group of five lakes in Sindhupalchowk District, Nepal",
+    "latitude": 28.042,
+    "longitude": 85.716,
+    "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Paach pokhri.jpg?width=1000",
+    "category": "sceneries",
+    "status": "approved",
+    "is_featured": false
+  },
+  {
+    "name": "Depang lake",
+    "description": "body of water",
+    "latitude": 28.18,
+    "longitude": 84.069,
+    "image_url": "https://placehold.co/600x400?text=No+Image",
+    "category": "sceneries",
+    "status": "approved",
+    "is_featured": false
+  },
+  {
+    "name": "Maidi lake",
+    "description": "body of water",
+    "latitude": 28.176502805216,
+    "longitude": 84.081035270271,
+    "image_url": "https://placehold.co/600x400?text=No+Image",
+    "category": "sceneries",
+    "status": "approved",
+    "is_featured": false
+  },
+  {
+    "name": "Siraichuli",
+    "description": "mountain in Nepal",
+    "latitude": 27.7626,
+    "longitude": 84.6312,
+    "image_url": "https://placehold.co/600x400?text=No+Image",
+    "category": "mountains",
+    "status": "approved",
+    "is_featured": false
+  },
+  {
+    "name": "Jhilmila Lake",
+    "description": "lake located in Nepal",
+    "latitude": 29.0680169,
+    "longitude": 80.1846398,
+    "image_url": "https://placehold.co/600x400?text=No+Image",
+    "category": "sceneries",
+    "status": "approved",
+    "is_featured": false
+  },
+  {
+    "name": "Ghunchok Pokhari",
+    "description": "body of water",
+    "latitude": 28.117777777778,
+    "longitude": 84.704166666667,
+    "image_url": "https://placehold.co/600x400?text=No+Image",
+    "category": "sceneries",
+    "status": "approved",
+    "is_featured": false
+  },
+  {
+    "name": "Ramthang Lho",
+    "description": "mountain in Nepal",
+    "latitude": 27.75132,
+    "longitude": 88.093625,
+    "image_url": "https://placehold.co/600x400?text=No+Image",
+    "category": "mountains",
+    "status": "approved",
+    "is_featured": false
+  },
+  {
+    "name": "Rathong",
+    "description": "mountain in the Himalayas",
+    "latitude": 27.594235,
+    "longitude": 88.088842,
+    "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Rathong glacier from Dzongri La (pass) 1.jpg?width=1000",
+    "category": "mountains",
+    "status": "approved",
+    "is_featured": false
+  },
+  {
+    "name": "Nepal Peak",
+    "description": "mountain on Nepal-Sikkim border",
+    "latitude": 27.776802,
+    "longitude": 88.182927,
+    "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/NepalPeak TentPeak.jpg?width=1000",
+    "category": "mountains",
+    "status": "approved",
+    "is_featured": false
+  },
+  {
+    "name": "Chandragiri Hill",
+    "description": "mountain on the south-west side of Kathmandu Valley, Nepal",
+    "latitude": 27.6661,
+    "longitude": 85.2055,
+    "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Panorama view of Kathmandu.jpg?width=1000",
+    "category": "mountains",
+    "status": "approved",
+    "is_featured": false
+  },
+  {
+    "name": "Swayambhunath",
+    "description": "Hindus and Buddhist holy place and tourist center in Kathmandu, Nepal",
+    "latitude": 27.715,
+    "longitude": 85.29,
+    "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Swayambhu, Kathmandu, Nepal.jpg?width=1000",
+    "category": "culturalCenters",
+    "status": "approved",
+    "is_featured": false
+  },
+  {
+    "name": "Q13185580",
+    "description": "",
+    "latitude": 27.87,
+    "longitude": 83.47,
+    "image_url": "https://placehold.co/600x400?text=No+Image",
+    "category": "culturalCenters",
+    "status": "approved",
+    "is_featured": false
+  },
+  {
+    "name": "Syarpu lake",
+    "description": "natural lake in Nepal",
+    "latitude": 28.6969,
+    "longitude": 82.4758,
+    "image_url": "https://placehold.co/600x400?text=No+Image",
+    "category": "sceneries",
+    "status": "approved",
+    "is_featured": false
+  },
+  {
+    "name": "Talung",
+    "description": "mountain in Nepal and Sikkim",
+    "latitude": 27.655,
+    "longitude": 88.14751,
+    "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Kalimpong 28.jpg?width=1000",
+    "category": "mountains",
+    "status": "approved",
+    "is_featured": false
+  },
+  {
+    "name": "Numbur",
+    "description": "mountain in Nepal",
+    "latitude": 27.75444603,
+    "longitude": 86.57307434,
+    "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Numbur himal.jpg?width=1000",
+    "category": "mountains",
+    "status": "approved",
+    "is_featured": false
+  },
+  {
+    "name": "Tsoboje",
+    "description": "mountain in the Himalayas",
+    "latitude": 27.883333333333,
+    "longitude": 86.488888888889,
+    "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Tsoboje Gipfel.jpg?width=1000",
+    "category": "mountains",
+    "status": "approved",
+    "is_featured": false
+  },
+  {
+    "name": "Yalung Ri",
+    "description": "mountain in Nepal",
+    "latitude": 27.85384,
+    "longitude": 86.41155,
+    "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/YalungRi mit Basecamp.jpg?width=1000",
+    "category": "mountains",
+    "status": "approved",
+    "is_featured": false
+  },
+  {
+    "name": "Poon Hill",
+    "description": "mountain in Nepal",
+    "latitude": 28.4000425,
+    "longitude": 83.6895402,
+    "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Poon Hill-68-Besucher vor Dhaulagiri-2013-gje.jpg?width=1000",
+    "category": "mountains",
+    "status": "approved",
+    "is_featured": false
+  },
+  {
+    "name": "Khiji Tholedemba",
+    "description": "mountain in Nepal",
+    "latitude": 27.866666666667,
+    "longitude": 86.383333333333,
+    "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Khijee-toledamba.jpg?width=1000",
+    "category": "mountains",
+    "status": "approved",
+    "is_featured": false
+  },
+  {
+    "name": "Q29535142",
+    "description": "",
+    "latitude": 28.234444444444,
+    "longitude": 83.787777777778,
+    "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Shrwankumar.jpg?width=1000",
+    "category": "culturalCenters",
+    "status": "approved",
+    "is_featured": false
+  },
+  {
+    "name": "Jakhera Lake",
+    "description": "lake in Dang District, Nepal",
+    "latitude": 27.875,
+    "longitude": 82.573611111111,
+    "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Jakhera Taal.jpeg?width=1000",
+    "category": "sceneries",
+    "status": "approved",
+    "is_featured": false
+  },
+  {
+    "name": "Barhakune Daha",
+    "description": "lake in Nepal",
+    "latitude": 28.073333333333,
+    "longitude": 82.485555555556,
+    "image_url": "https://placehold.co/600x400?text=No+Image",
+    "category": "sceneries",
+    "status": "approved",
+    "is_featured": false
+  },
+  {
+    "name": "Jakhera Tal",
+    "description": "lake in Nepal",
+    "latitude": 27.875277777778,
+    "longitude": 82.573333333333,
+    "image_url": "https://placehold.co/600x400?text=No+Image",
+    "category": "sceneries",
+    "status": "approved",
+    "is_featured": false
+  },
+  {
+    "name": "Lobuche West",
+    "description": "peak in the Himalayas",
+    "latitude": 27.9696,
+    "longitude": 86.7815,
+    "image_url": "https://placehold.co/600x400?text=No+Image",
+    "category": "mountains",
+    "status": "approved",
+    "is_featured": false
+  },
+  {
+    "name": "Ganesh NW",
+    "description": "mountain in Nepal",
+    "latitude": 28.37916667,
+    "longitude": 85.05666667,
+    "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Ganesh Himal air view.jpg?width=1000",
+    "category": "mountains",
+    "status": "approved",
+    "is_featured": false
+  },
+  {
+    "name": "Q20190813",
+    "description": "",
+    "latitude": 28.873504,
+    "longitude": 84.159853,
+    "image_url": "https://placehold.co/600x400?text=No+Image",
+    "category": "mountains",
+    "status": "approved",
+    "is_featured": false
+  },
+  {
+    "name": "Drohmo",
+    "description": "multi-peaked mountain in Eastern Nepal",
+    "latitude": 27.824426,
+    "longitude": 88.102187,
+    "image_url": "https://placehold.co/600x400?text=No+Image",
+    "category": "mountains",
+    "status": "approved",
+    "is_featured": false
+  },
+  {
+    "name": "Khumjungar Himal",
+    "description": "mountain in Nepal",
+    "latitude": 28.889141,
+    "longitude": 84.126545,
+    "image_url": "https://placehold.co/600x400?text=No+Image",
+    "category": "mountains",
+    "status": "approved",
+    "is_featured": false
+  },
+  {
+    "name": "Kyajo Ri",
+    "description": "",
+    "latitude": 27.909067,
+    "longitude": 86.671287,
+    "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Machermo Peak.jpg?width=1000",
+    "category": "mountains",
+    "status": "approved",
+    "is_featured": false
+  },
+  {
+    "name": "Loenpo Gang",
+    "description": "mountain in Nepal and China",
+    "latitude": 28.195696,
+    "longitude": 85.799466,
+    "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Dorje lakpa - 2020.jpg?width=1000",
+    "category": "mountains",
+    "status": "approved",
+    "is_featured": false
+  },
+  {
+    "name": "Parchamo",
+    "description": "mountain in Nepal",
+    "latitude": 27.836571,
+    "longitude": 86.547439,
+    "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Bhote Koshi.JPG?width=1000",
+    "category": "mountains",
+    "status": "approved",
+    "is_featured": false
+  },
+  {
+    "name": "Pharilapcha",
+    "description": "Mountain in Nepal",
+    "latitude": 27.929108,
+    "longitude": 86.680911,
+    "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Nepal, mountains behind a sea, Wiki Loves Earth 2017.jpg?width=1000",
+    "category": "mountains",
+    "status": "approved",
+    "is_featured": false
+  },
+  {
+    "name": "Ratna Chuli",
+    "description": "mountain peak in Nepal/China",
+    "latitude": 28.864613,
+    "longitude": 84.375052,
+    "image_url": "https://placehold.co/600x400?text=No+Image",
+    "category": "mountains",
+    "status": "approved",
+    "is_featured": false
+  },
+  {
+    "name": "Gurja Himal",
+    "description": "mountain in Nepal",
+    "latitude": 28.67435,
+    "longitude": 83.275813,
+    "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Dhaulagiri VI (3to4).jpg?width=1000",
+    "category": "mountains",
+    "status": "approved",
+    "is_featured": false
+  },
+  {
+    "name": "Annapurna IV",
+    "description": "mountain of the Annapurna range in the Himalayas",
+    "latitude": 28.5375,
+    "longitude": 84.082778,
+    "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Annapurna IV.jpg?width=1000",
+    "category": "mountains",
+    "status": "approved",
+    "is_featured": false
+  },
+  {
+    "name": "Q20757622",
+    "description": "mountain in Nepal",
+    "latitude": 27.87183,
+    "longitude": 88.091297,
+    "image_url": "https://placehold.co/600x400?text=No+Image",
+    "category": "mountains",
+    "status": "approved",
+    "is_featured": false
+  },
+  {
+    "name": "Kang Nachugo",
+    "description": "mountain in Nepal",
+    "latitude": 27.906036,
+    "longitude": 86.442457,
+    "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Chekigo und Kang Nachugo.jpg?width=1000",
+    "category": "mountains",
+    "status": "approved",
+    "is_featured": false
+  },
+  {
+    "name": "Karyolung",
+    "description": "mountain in Nepal",
+    "latitude": 27.733438,
+    "longitude": 86.611939,
+    "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Local hotel at Namche.JPG?width=1000",
+    "category": "mountains",
+    "status": "approved",
+    "is_featured": false
+  },
+  {
+    "name": "Khangri Shar",
+    "description": "mountain in Nepal",
+    "latitude": 28.019746,
+    "longitude": 86.812008,
+    "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Khangri Shar and Pumori.jpg?width=1000",
+    "category": "mountains",
+    "status": "approved",
+    "is_featured": false
+  },
+  {
+    "name": "Khatang",
+    "description": "mountain in Nepal",
+    "latitude": 27.757836,
+    "longitude": 86.595671,
+    "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Local hotel at Namche.JPG?width=1000",
+    "category": "mountains",
+    "status": "approved",
+    "is_featured": false
+  },
+  {
+    "name": "Q20757630",
+    "description": "mountain in Nepal",
+    "latitude": 30.00444031,
+    "longitude": 80.99452209,
+    "image_url": "https://placehold.co/600x400?text=No+Image",
+    "category": "mountains",
+    "status": "approved",
+    "is_featured": false
+  },
+  {
+    "name": "Chumbu",
+    "description": "mountain in Nepal",
+    "latitude": 28.01393318,
+    "longitude": 86.788414,
+    "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Chumbu 6859 m from near Gorak shep.jpg?width=1000",
+    "category": "mountains",
+    "status": "approved",
+    "is_featured": false
+  },
+  {
+    "name": "Q20757639",
+    "description": "mountain in Nepal",
+    "latitude": 28.005892,
+    "longitude": 86.519977,
+    "image_url": "https://placehold.co/600x400?text=No+Image",
+    "category": "mountains",
+    "status": "approved",
+    "is_featured": false
+  },
+  {
+    "name": "Ramthang Chang",
+    "description": "mountain in Nepal",
+    "latitude": 27.765722,
+    "longitude": 88.084056,
+    "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/10-11plancheX-XI.JPG?width=1000",
+    "category": "mountains",
+    "status": "approved",
+    "is_featured": false
+  },
+  {
+    "name": "Sita Chuchura",
+    "description": "mountain in Nepal",
+    "latitude": 28.782633,
+    "longitude": 83.483197,
+    "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Flickr - don macauley - Sita Chuchura.jpg?width=1000",
+    "category": "mountains",
+    "status": "approved",
+    "is_featured": false
+  },
+  {
+    "name": "Churen Himal",
+    "description": "mountain in Nepal",
+    "latitude": 28.731595,
+    "longitude": 83.21011,
+    "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Himalayan Horizon From Space.jpg?width=1000",
+    "category": "mountains",
+    "status": "approved",
+    "is_featured": false
+  },
+  {
+    "name": "Thulagi Chuli",
+    "description": "mountain in Nepal",
+    "latitude": 28.527476,
+    "longitude": 84.520366,
+    "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Manaslu west.jpg?width=1000",
+    "category": "mountains",
+    "status": "approved",
+    "is_featured": false
+  },
+  {
+    "name": "Dragmarpo Ri",
+    "description": "mountain in Nepal/China",
+    "latitude": 28.3257,
+    "longitude": 85.6614,
+    "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Dragmarpo-ri.jpg?width=1000",
+    "category": "mountains",
+    "status": "approved",
+    "is_featured": false
+  },
+  {
+    "name": "Nagdaha",
+    "description": "lake in Lalitpur District, Nepal",
+    "latitude": 27.6246,
+    "longitude": 85.3331,
+    "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/NagDaha (3544462830).jpg?width=1000",
+    "category": "sceneries",
+    "status": "approved",
+    "is_featured": false
+  },
+  {
+    "name": "Pangpoche",
+    "description": "mountain in Nepal",
+    "latitude": 28.6225,
+    "longitude": 84.6775,
+    "image_url": "https://placehold.co/600x400?text=No+Image",
+    "category": "mountains",
+    "status": "approved",
+    "is_featured": false
+  },
+  {
+    "name": "Gyaji Kang",
+    "description": "",
+    "latitude": 28.733731,
+    "longitude": 84.366699,
+    "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Manaslu-Circuit Pass.jpg?width=1000",
+    "category": "mountains",
+    "status": "approved",
+    "is_featured": false
+  },
+  {
+    "name": "Himlung Himal",
+    "description": "mountain in Nepal",
+    "latitude": 28.771864,
+    "longitude": 84.422124,
+    "image_url": "https://placehold.co/600x400?text=No+Image",
+    "category": "mountains",
+    "status": "approved",
+    "is_featured": false
+  },
+  {
+    "name": "Tengkangpoche",
+    "description": "mountain in Nepal",
+    "latitude": 27.803968,
+    "longitude": 86.59647,
+    "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Thame.JPG?width=1000",
+    "category": "mountains",
+    "status": "approved",
+    "is_featured": false
+  },
+  {
+    "name": "Annapurna South",
+    "description": "mountain in Nepal",
+    "latitude": 28.518,
+    "longitude": 83.806,
+    "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Annapurna Base Camp Range 18.jpg?width=1000",
+    "category": "mountains",
+    "status": "approved",
+    "is_featured": false
+  },
+  {
+    "name": "Q20190801",
+    "description": "",
+    "latitude": 27.621179,
+    "longitude": 88.004807,
+    "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/BoktohCentral.jpeg?width=1000",
+    "category": "mountains",
+    "status": "approved",
+    "is_featured": false
+  },
+  {
+    "name": "Chekigo",
+    "description": "",
+    "latitude": 27.907456,
+    "longitude": 86.414273,
+    "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Chekigo und Kang Nachugo.jpg?width=1000",
+    "category": "mountains",
+    "status": "approved",
+    "is_featured": false
+  },
+  {
+    "name": "Kongma Tse",
+    "description": "mountain in Nepal",
+    "latitude": 27.944034,
+    "longitude": 86.838729,
+    "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Gorakshep.jpg?width=1000",
+    "category": "mountains",
+    "status": "approved",
+    "is_featured": false
+  },
+  {
+    "name": "Q20190961",
+    "description": "",
+    "latitude": 30.136479,
+    "longitude": 82.198666,
+    "image_url": "https://placehold.co/600x400?text=No+Image",
+    "category": "mountains",
+    "status": "approved",
+    "is_featured": false
+  },
+  {
+    "name": "Lamjung Himal",
+    "description": "mountain in Nepal",
+    "latitude": 28.489144,
+    "longitude": 84.188747,
+    "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Ghale gau, Lamjung.JPG?width=1000",
+    "category": "mountains",
+    "status": "approved",
+    "is_featured": false
+  },
+  {
+    "name": "Q20190992",
+    "description": "",
+    "latitude": 27.853622,
+    "longitude": 88.196481,
+    "image_url": "https://placehold.co/600x400?text=No+Image",
+    "category": "mountains",
+    "status": "approved",
+    "is_featured": false
+  },
+  {
+    "name": "Lugula Himal",
+    "description": "mountain peak in Nepal",
+    "latitude": 28.896533,
+    "longitude": 84.259926,
+    "image_url": "https://placehold.co/600x400?text=No+Image",
+    "category": "mountains",
+    "status": "approved",
+    "is_featured": false
+  },
+  {
+    "name": "Q20191069",
+    "description": "subpeak to the east of Annapurna South",
+    "latitude": 28.530839,
+    "longitude": 83.824597,
+    "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Annapurna I ABC Morning.jpg?width=1000",
+    "category": "mountains",
+    "status": "approved",
+    "is_featured": false
+  },
+  {
+    "name": "Q20191193",
+    "description": "",
+    "latitude": 28.814746,
+    "longitude": 83.990296,
+    "image_url": "https://placehold.co/600x400?text=No+Image",
+    "category": "mountains",
+    "status": "approved",
+    "is_featured": false
+  },
+  {
+    "name": "Q20191196",
+    "description": "",
+    "latitude": 28.801348,
+    "longitude": 84.017912,
+    "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Damodar Himal.jpg?width=1000",
+    "category": "mountains",
+    "status": "approved",
+    "is_featured": false
+  },
+  {
+    "name": "Ramdung Go",
+    "description": "mountain in the Himalayas",
+    "latitude": 27.818848,
+    "longitude": 86.431135,
+    "image_url": "https://placehold.co/600x400?text=No+Image",
+    "category": "mountains",
+    "status": "approved",
+    "is_featured": false
+  },
+  {
+    "name": "Shar Tse",
+    "description": "mountain in Nepal",
+    "latitude": 27.9493,
+    "longitude": 86.98318,
+    "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Mount Everest as seen from Drukair2 PLW edit.jpg?width=1000",
+    "category": "mountains",
+    "status": "approved",
+    "is_featured": false
+  },
+  {
+    "name": "Kangchungtse",
+    "description": "secondary summit on Makalu",
+    "latitude": 27.915086,
+    "longitude": 87.078571,
+    "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Makalu and Chamlang.jpg?width=1000",
+    "category": "mountains",
+    "status": "approved",
+    "is_featured": false
+  },
+  {
+    "name": "Jobo Rinjang",
+    "description": "mountain in Nepal",
+    "latitude": 28.042563,
+    "longitude": 86.565585,
+    "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/NangpaLa.jpg?width=1000",
+    "category": "mountains",
+    "status": "approved",
+    "is_featured": false
+  },
+  {
+    "name": "Bobaye",
+    "description": "mountain in Nepal",
+    "latitude": 29.958321,
+    "longitude": 81.021302,
+    "image_url": "https://placehold.co/600x400?text=No+Image",
+    "category": "mountains",
+    "status": "approved",
+    "is_featured": false
+  },
+  {
+    "name": "Q20757615",
+    "description": "mountain in Nepal",
+    "latitude": 28.764991,
+    "longitude": 84.452111,
+    "image_url": "https://placehold.co/600x400?text=No+Image",
+    "category": "mountains",
+    "status": "approved",
+    "is_featured": false
+  },
+  {
+    "name": "Chhukung Ri",
+    "description": "mountain in Nepal",
+    "latitude": 27.926057,
+    "longitude": 86.879196,
+    "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Chhukung-292-Chhukung Ri-Nuptse-Lhotse-2007-gje.jpg?width=1000",
+    "category": "mountains",
+    "status": "approved",
+    "is_featured": false
+  },
+  {
+    "name": "Chukyima Go",
+    "description": "mountain in Nepal",
+    "latitude": 27.832433,
+    "longitude": 86.450005,
+    "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/ChukimaGo.jpg?width=1000",
+    "category": "mountains",
+    "status": "approved",
+    "is_featured": false
+  },
+  {
+    "name": "Drangnag Ri",
+    "description": "mountain in Nepal",
+    "latitude": 27.939402,
+    "longitude": 86.524034,
+    "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/DragnagRi von Süden.jpg?width=1000",
+    "category": "mountains",
+    "status": "approved",
+    "is_featured": false
+  },
+  {
+    "name": "Hungchi",
+    "description": "mountain in Nepal",
+    "latitude": 28.035068,
+    "longitude": 86.758817,
+    "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Gokyo surroundings-50-Ngozumpa-Gletscher-Berge-2007-gje.jpg?width=1000",
+    "category": "mountains",
+    "status": "approved",
+    "is_featured": false
+  },
+  {
+    "name": "Likhu Chuli",
+    "description": "mountain in Nepal",
+    "latitude": 27.808787,
+    "longitude": 86.540882,
+    "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Cho-Rolpa Glacier lake.jpg?width=1000",
+    "category": "mountains",
+    "status": "approved",
+    "is_featured": false
+  },
+  {
+    "name": "Lunag Ri",
+    "description": "mountain in Nepal",
+    "latitude": 28.052968,
+    "longitude": 86.551629,
+    "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/NangpaLa.jpg?width=1000",
+    "category": "mountains",
+    "status": "approved",
+    "is_featured": false
+  },
+  {
+    "name": "Malāṅphulāṅ",
+    "description": "mountain in Nepal",
+    "latitude": 27.807772,
+    "longitude": 86.866896,
+    "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Malangphutang and 6464.jpg?width=1000",
+    "category": "mountains",
+    "status": "approved",
+    "is_featured": false
+  },
+  {
+    "name": "Naulekh",
+    "description": "mountain in Nepal",
+    "latitude": 27.687574,
+    "longitude": 86.902612,
+    "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Mera Peak 10033.JPG?width=1000",
+    "category": "mountains",
+    "status": "approved",
+    "is_featured": false
+  },
+  {
+    "name": "Nilgiri South",
+    "description": "mountain in Nepal",
+    "latitude": 28.654817,
+    "longitude": 83.730025,
+    "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Poon Hill-58-Nilgiri-Flugzeug-2013-gje.jpg?width=1000",
+    "category": "mountains",
+    "status": "approved",
+    "is_featured": false
+  },
+  {
+    "name": "Q20757636",
+    "description": "mountain in Nepal",
+    "latitude": 27.896905,
+    "longitude": 87.964158,
+    "image_url": "https://placehold.co/600x400?text=No+Image",
+    "category": "mountains",
+    "status": "approved",
+    "is_featured": false
+  },
+  {
+    "name": "Panbari",
+    "description": "mountain in Nepal",
+    "latitude": 28.718353,
+    "longitude": 84.482386,
+    "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Panbari.jpg?width=1000",
+    "category": "mountains",
+    "status": "approved",
+    "is_featured": false
+  },
+  {
+    "name": "Pethang Tse",
+    "description": "mountain in Nepal",
+    "latitude": 27.95745,
+    "longitude": 87.01601,
+    "image_url": "https://placehold.co/600x400?text=No+Image",
+    "category": "mountains",
+    "status": "approved",
+    "is_featured": false
+  },
+  {
+    "name": "Tengi Ragi Tau",
+    "description": "mountain in Nepal",
+    "latitude": 27.857915,
+    "longitude": 86.554091,
+    "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Bhote Koshi.JPG?width=1000",
+    "category": "mountains",
+    "status": "approved",
+    "is_featured": false
+  },
+  {
+    "name": "Nemjung",
+    "description": "mountain in Nepal",
+    "latitude": 28.735,
+    "longitude": 84.41666667,
+    "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Nemjung Gipfel 7140 Meter.jpg?width=1000",
+    "category": "mountains",
+    "status": "approved",
+    "is_featured": false
+  },
+  {
+    "name": "Birendra Lake",
+    "description": "body of water",
+    "latitude": 28.595833333333,
+    "longitude": 84.628333333333,
+    "image_url": "https://placehold.co/600x400?text=No+Image",
+    "category": "sceneries",
+    "status": "approved",
+    "is_featured": false
+  },
+  {
+    "name": "Paungda Danda",
+    "description": "mountain",
+    "latitude": 28.58611111,
+    "longitude": 84.21833333,
+    "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Polished mountains - Annapurna Circuit, Nepal - panoramio.jpg?width=1000",
+    "category": "mountains",
+    "status": "approved",
+    "is_featured": false
+  },
+  {
+    "name": "Cholo",
+    "description": "mountain in Nepal",
+    "latitude": 27.983689,
+    "longitude": 86.720671,
+    "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Gokyo surroundings-76-Ngozumpa-Gletscher-Berg-2007-gje.jpg?width=1000",
+    "category": "mountains",
+    "status": "approved",
+    "is_featured": false
+  },
+  {
+    "name": "Nupla",
+    "description": "mountain in Nepal",
+    "latitude": 27.7719,
+    "longitude": 86.6601,
+    "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Lukla-14-Flugplatz-2007-gje.jpg?width=1000",
+    "category": "mountains",
+    "status": "approved",
+    "is_featured": false
+  },
+  {
+    "name": "Bhalu Lek",
+    "description": "mountain in Nepal",
+    "latitude": 28.983333333333,
+    "longitude": 82.4,
+    "image_url": "https://placehold.co/600x400?text=No+Image",
+    "category": "mountains",
+    "status": "approved",
+    "is_featured": false
+  },
+  {
+    "name": "Shalbachum",
+    "description": "mountain in Nepal and China",
+    "latitude": 28.27097,
+    "longitude": 85.63048,
+    "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Shalbachum.png?width=1000",
+    "category": "mountains",
+    "status": "approved",
+    "is_featured": false
+  },
+  {
+    "name": "Pulchoki Mountain",
+    "description": "mountain in Nepal",
+    "latitude": 27.5708,
+    "longitude": 85.40691,
+    "image_url": "https://placehold.co/600x400?text=No+Image",
+    "category": "mountains",
+    "status": "approved",
+    "is_featured": false
+  },
+  {
+    "name": "Bhrānge",
+    "description": "",
+    "latitude": 28.276765,
+    "longitude": 85.185807,
+    "image_url": "https://placehold.co/600x400?text=No+Image",
+    "category": "mountains",
+    "status": "approved",
+    "is_featured": false
+  },
+  {
+    "name": "Mukut Himāl",
+    "description": "",
+    "latitude": 28.843333333333,
+    "longitude": 83.4975,
+    "image_url": "https://placehold.co/600x400?text=No+Image",
+    "category": "mountains",
+    "status": "approved",
+    "is_featured": false
+  },
+  {
+    "name": "Loengpogang",
+    "description": "",
+    "latitude": 28.15,
+    "longitude": 85.8625,
+    "image_url": "https://placehold.co/600x400?text=No+Image",
+    "category": "mountains",
+    "status": "approved",
+    "is_featured": false
+  },
+  {
+    "name": "Lobujya West",
+    "description": "",
+    "latitude": 27.967777777778,
+    "longitude": 86.795833333333,
+    "image_url": "https://placehold.co/600x400?text=No+Image",
+    "category": "mountains",
+    "status": "approved",
+    "is_featured": false
+  },
+  {
+    "name": "Hiūnchuli Pātan",
+    "description": "peak in Sisne Himal, Nepal",
+    "latitude": 28.828,
+    "longitude": 82.6164,
+    "image_url": "https://placehold.co/600x400?text=No+Image",
+    "category": "mountains",
+    "status": "approved",
+    "is_featured": false
+  },
+  {
+    "name": "Nupla Khang",
+    "description": "mountain in the Himalayas",
+    "latitude": 28.074166666667,
+    "longitude": 86.766944444444,
+    "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Nupla Khang.jpg?width=1000",
+    "category": "mountains",
+    "status": "approved",
+    "is_featured": false
+  },
+  {
+    "name": "Chankheli Peak",
+    "description": "mountain in Nepal",
+    "latitude": 29.6368,
+    "longitude": 82.1031,
+    "image_url": "https://placehold.co/600x400?text=No+Image",
+    "category": "mountains",
+    "status": "approved",
+    "is_featured": false
+  },
+  {
+    "name": "Gudal lake",
+    "description": "body of water",
+    "latitude": 28.191527777778,
+    "longitude": 84.041555555556,
+    "image_url": "https://placehold.co/600x400?text=No+Image",
+    "category": "sceneries",
+    "status": "approved",
+    "is_featured": false
+  },
+  {
+    "name": "Pisang Peak",
+    "description": "mountain in Nepal",
+    "latitude": 28.64721,
+    "longitude": 84.18454,
+    "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Natural Phenomenon.JPG?width=1000",
+    "category": "mountains",
+    "status": "approved",
+    "is_featured": false
+  },
+  {
+    "name": "Neureni lake",
+    "description": "body of water",
+    "latitude": 28.191666666667,
+    "longitude": 84.048611111111,
+    "image_url": "https://placehold.co/600x400?text=No+Image",
+    "category": "sceneries",
+    "status": "approved",
+    "is_featured": false
+  },
+  {
+    "name": "Tashi Kang",
+    "description": "",
+    "latitude": 28.852707,
+    "longitude": 83.629522,
+    "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/View from muktinath 23.JPG?width=1000",
+    "category": "mountains",
+    "status": "approved",
+    "is_featured": false
+  },
+  {
+    "name": "Gangchempo",
+    "description": "mountain in Nepal",
+    "latitude": 28.168874,
+    "longitude": 85.678351,
+    "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Gangchempo 6387 m-2734.jpg?width=1000",
+    "category": "mountains",
+    "status": "approved",
+    "is_featured": false
+  },
+  {
+    "name": "Kimshung",
+    "description": "mountain peak in Nepal",
+    "latitude": 28.272130555556,
+    "longitude": 85.553691666667,
+    "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Langtang-lirung-and-kimshung.jpg?width=1000",
+    "category": "mountains",
+    "status": "approved",
+    "is_featured": false
+  },
+  {
+    "name": "Langshisa Ri",
+    "description": "mountain in Nepal",
+    "latitude": 28.21689987,
+    "longitude": 85.71360016,
+    "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Langtang Trek.jpg?width=1000",
+    "category": "mountains",
+    "status": "approved",
+    "is_featured": false
+  },
+  {
+    "name": "Langtang Himal",
+    "description": "mountain range on Nepal / China (Tibet) border",
+    "latitude": 28.391666666667,
+    "longitude": 85.1275,
+    "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Langtang range (24).JPG?width=1000",
+    "category": "mountains",
+    "status": "approved",
+    "is_featured": false
+  },
+  {
+    "name": "Naya Kanga",
+    "description": "mountain in Nepal",
+    "latitude": 28.168322,
+    "longitude": 85.548541,
+    "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Mountain of Langtang (7).JPG?width=1000",
+    "category": "mountains",
+    "status": "approved",
+    "is_featured": false
+  },
+  {
+    "name": "Pabil",
+    "description": "mountain in Nepal",
+    "latitude": 28.345833,
+    "longitude": 85.08,
+    "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Ganesh himal.JPG?width=1000",
+    "category": "mountains",
+    "status": "approved",
+    "is_featured": false
+  },
+  {
+    "name": "Changla",
+    "description": "mountain in Nepal/China",
+    "latitude": 30.1375,
+    "longitude": 82.1958,
+    "image_url": "https://placehold.co/600x400?text=No+Image",
+    "category": "mountains",
+    "status": "approved",
+    "is_featured": false
+  },
+  {
+    "name": "Kanjiroba",
+    "description": "mountain in Nepal",
+    "latitude": 29.3783,
+    "longitude": 82.6392,
+    "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Kanjiroba Mountain.JPG?width=1000",
+    "category": "mountains",
+    "status": "approved",
+    "is_featured": false
+  },
+  {
+    "name": "Kubi Gangri",
+    "description": "mountain in Nepal/China",
+    "latitude": 29.766053,
+    "longitude": 82.75163,
+    "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Kaqur Kangri.jpg?width=1000",
+    "category": "mountains",
+    "status": "approved",
+    "is_featured": false
+  },
+  {
+    "name": "Panchase Lake",
+    "description": "",
+    "latitude": 28.234541,
+    "longitude": 83.787478,
+    "image_url": "https://placehold.co/600x400?text=No+Image",
+    "category": "sceneries",
+    "status": "approved",
+    "is_featured": false
+  },
+  {
+    "name": "Bulbule Lake",
+    "description": "lake in Karnali Province, Nepal",
+    "latitude": 28.581388888889,
+    "longitude": 81.619444444444,
+    "image_url": "https://placehold.co/600x400?text=No+Image",
+    "category": "sceneries",
+    "status": "approved",
+    "is_featured": false
+  },
+  {
+    "name": "Malika Dhuri",
+    "description": "",
+    "latitude": 28.2,
+    "longitude": 83.1,
+    "image_url": "https://placehold.co/600x400?text=No+Image",
+    "category": "mountains",
+    "status": "approved",
+    "is_featured": false
+  },
+  {
+    "name": "Kamal lake",
+    "description": "natural lake in Nepal",
+    "latitude": 28.614166666667,
+    "longitude": 82.625555555556,
+    "image_url": "https://placehold.co/600x400?text=No+Image",
+    "category": "sceneries",
+    "status": "approved",
+    "is_featured": false
+  },
+  {
+    "name": "Salpa Pokhari",
+    "description": "lake in Nepal",
+    "latitude": 27.446388888889,
+    "longitude": 86.933611111111,
+    "image_url": "https://placehold.co/600x400?text=No+Image",
+    "category": "sceneries",
+    "status": "approved",
+    "is_featured": false
+  },
+  {
+    "name": "Khaptad Lake",
+    "description": "lake in Nepal",
+    "latitude": 29.386666666667,
+    "longitude": 80.168333333333,
+    "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Beautiful lake located at the far-west Nepal.jpg?width=1000",
+    "category": "sceneries",
+    "status": "approved",
+    "is_featured": false
+  },
+  {
+    "name": "Kajin Sara",
+    "description": "lake in Manang district, Nepal",
+    "latitude": 28.496861111111,
+    "longitude": 84.256166666667,
+    "image_url": "https://placehold.co/600x400?text=No+Image",
+    "category": "sceneries",
+    "status": "approved",
+    "is_featured": false
+  },
+  {
+    "name": "Phungi",
+    "description": "Himalayan mountain",
+    "latitude": 28.83,
+    "longitude": 84.402777777778,
+    "image_url": "https://placehold.co/600x400?text=No+Image",
+    "category": "mountains",
+    "status": "approved",
+    "is_featured": false
+  },
+  {
+    "name": "Arakam Tse",
+    "description": "mountain in Khumbu, Nepal",
+    "latitude": 27.941718,
+    "longitude": 86.752654,
+    "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Arakam Tse viewed from Gokyo Ri.jpg?width=1000",
+    "category": "mountains",
+    "status": "approved",
+    "is_featured": false
+  },
+  {
+    "name": "Chulu East",
+    "description": "mountain in Nepal",
+    "latitude": 28.736111111111,
+    "longitude": 84.034722222222,
+    "image_url": "https://placehold.co/600x400?text=No+Image",
+    "category": "mountains",
+    "status": "approved",
+    "is_featured": false
+  },
+  {
+    "name": "Nangpai Gosum II",
+    "description": "mountain in the Himalayas",
+    "latitude": 28.066666666667,
+    "longitude": 86.6,
+    "image_url": "https://placehold.co/600x400?text=No+Image",
+    "category": "mountains",
+    "status": "approved",
+    "is_featured": false
+  },
+  {
+    "name": "Q56305107",
+    "description": "mountain",
+    "latitude": 28.169,
+    "longitude": 85.678,
+    "image_url": "https://placehold.co/600x400?text=No+Image",
+    "category": "mountains",
+    "status": "approved",
+    "is_featured": false
+  },
+  {
+    "name": "Phurbi Chhyachu",
+    "description": "mountain in Nepal",
+    "latitude": 28.1260087,
+    "longitude": 85.8674922,
+    "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Jugal Himal Nepal.jpg?width=1000",
+    "category": "mountains",
+    "status": "approved",
+    "is_featured": false
+  },
+  {
+    "name": "Nilgiri",
+    "description": "mountain in Nepal",
+    "latitude": 28.67914,
+    "longitude": 83.73633,
+    "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Nilgiri Himal, Himalaya, Nepal.jpg?width=1000",
+    "category": "mountains",
+    "status": "approved",
+    "is_featured": false
+  },
+  {
+    "name": "Tukuche Peak",
+    "description": "mountain in Nepal",
+    "latitude": 28.74554,
+    "longitude": 83.55772,
+    "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Dhaulagiri Tukuche Dhampus.jpg?width=1000",
+    "category": "mountains",
+    "status": "approved",
+    "is_featured": false
+  },
+  {
+    "name": "Thorungste",
+    "description": "mountain in Nepal",
+    "latitude": 28.80986,
+    "longitude": 83.93881,
+    "image_url": "https://placehold.co/600x400?text=No+Image",
+    "category": "mountains",
+    "status": "approved",
+    "is_featured": false
+  },
+  {
+    "name": "Chulu",
+    "description": "mountain in Nepal",
+    "latitude": 28.74147,
+    "longitude": 84.02807,
+    "image_url": "https://placehold.co/600x400?text=No+Image",
+    "category": "mountains",
+    "status": "approved",
+    "is_featured": false
+  },
+  {
+    "name": "Tirkhe Dhunga",
+    "description": "mountain in Nepal",
+    "latitude": 28.3689,
+    "longitude": 83.7658,
+    "image_url": "https://placehold.co/600x400?text=No+Image",
+    "category": "mountains",
+    "status": "approved",
+    "is_featured": false
+  },
+  {
+    "name": "N Surya Peak",
+    "description": "mountain in Nepal",
+    "latitude": 28.08997,
+    "longitude": 85.44346,
+    "image_url": "https://placehold.co/600x400?text=No+Image",
+    "category": "mountains",
+    "status": "approved",
+    "is_featured": false
+  },
+  {
+    "name": "Surya Peak",
+    "description": "mountain in Nepal",
+    "latitude": 28.0808,
+    "longitude": 85.43218,
+    "image_url": "https://placehold.co/600x400?text=No+Image",
+    "category": "mountains",
+    "status": "approved",
+    "is_featured": false
+  },
+  {
+    "name": "S Chhyarkung Chuli",
+    "description": "mountain in Nepal",
+    "latitude": 28.0557,
+    "longitude": 85.40458,
+    "image_url": "https://placehold.co/600x400?text=No+Image",
+    "category": "mountains",
+    "status": "approved",
+    "is_featured": false
+  },
+  {
+    "name": "Langtang II",
+    "description": "mountain in Nepal",
+    "latitude": 28.25979,
+    "longitude": 85.49848,
+    "image_url": "https://placehold.co/600x400?text=No+Image",
+    "category": "mountains",
+    "status": "approved",
+    "is_featured": false
+  },
+  {
+    "name": "Gyajin Kang",
+    "description": "mountain in Nepal",
+    "latitude": 28.73335,
+    "longitude": 84.37163,
+    "image_url": "https://placehold.co/600x400?text=No+Image",
+    "category": "mountains",
+    "status": "approved",
+    "is_featured": false
+  },
+  {
+    "name": "Pāri̇̄ Himāl",
+    "description": "",
+    "latitude": 28.2991,
+    "longitude": 85.5439,
+    "image_url": "https://placehold.co/600x400?text=No+Image",
+    "category": "mountains",
+    "status": "approved",
+    "is_featured": false
+  },
+  {
+    "name": "Yubrā Himāl",
+    "description": "",
+    "latitude": 28.272,
+    "longitude": 85.5528,
+    "image_url": "https://placehold.co/600x400?text=No+Image",
+    "category": "mountains",
+    "status": "approved",
+    "is_featured": false
+  },
+  {
+    "name": "Lumbo Himāl",
+    "description": "",
+    "latitude": 28.4075,
+    "longitude": 85.0082,
+    "image_url": "https://placehold.co/600x400?text=No+Image",
+    "category": "mountains",
+    "status": "approved",
+    "is_featured": false
+  },
+  {
+    "name": "Lāri̇̄",
+    "description": "",
+    "latitude": 28.229166666667,
+    "longitude": 85.1975,
+    "image_url": "https://placehold.co/600x400?text=No+Image",
+    "category": "mountains",
+    "status": "approved",
+    "is_featured": false
+  },
+  {
+    "name": "Rināmo Hill",
+    "description": "",
+    "latitude": 28.24187,
+    "longitude": 85.23163,
+    "image_url": "https://placehold.co/600x400?text=No+Image",
+    "category": "mountains",
+    "status": "approved",
+    "is_featured": false
+  },
+  {
+    "name": "Kāṅālā Himāl",
+    "description": "",
+    "latitude": 28.1625,
+    "longitude": 85.613055555556,
+    "image_url": "https://placehold.co/600x400?text=No+Image",
+    "category": "mountains",
+    "status": "approved",
+    "is_featured": false
+  },
+  {
+    "name": "Dorje Himāl",
+    "description": "",
+    "latitude": 28.1698,
+    "longitude": 85.6777,
+    "image_url": "https://placehold.co/600x400?text=No+Image",
+    "category": "mountains",
+    "status": "approved",
+    "is_featured": false
+  },
+  {
+    "name": "Ali Taal",
+    "description": "body of water",
+    "latitude": 29.09,
+    "longitude": 80.49,
+    "image_url": "https://placehold.co/600x400?text=No+Image",
+    "category": "natureTrails",
+    "status": "approved",
+    "is_featured": false
+  },
+  {
+    "name": "Barju Taal",
+    "description": "body of water",
+    "latitude": 26.485444444444,
+    "longitude": 87.173222222222,
+    "image_url": "https://placehold.co/600x400?text=No+Image",
+    "category": "natureTrails",
+    "status": "approved",
+    "is_featured": false
+  },
+  {
+    "name": "Kubinde Daha",
+    "description": "lake in Nepal",
+    "latitude": 28.670555555556,
+    "longitude": 82.287222222222,
+    "image_url": "https://placehold.co/600x400?text=No+Image",
+    "category": "sceneries",
+    "status": "approved",
+    "is_featured": false
+  },
+  {
+    "name": "Guphapokhari",
+    "description": "Pond in Nepal",
+    "latitude": 27.285277777778,
+    "longitude": 87.506388888889,
+    "image_url": "https://placehold.co/600x400?text=No+Image",
+    "category": "sceneries",
+    "status": "approved",
+    "is_featured": false
+  },
+  {
+    "name": "Tsergo Ri",
+    "description": "mountain peak",
+    "latitude": 28.212777777778,
+    "longitude": 85.6,
+    "image_url": "https://placehold.co/600x400?text=No+Image",
+    "category": "mountains",
+    "status": "approved",
+    "is_featured": false
+  },
+  {
+    "name": "Ombigaichan",
+    "description": "mountain in Nepal",
+    "latitude": 27.852816,
+    "longitude": 86.883436,
+    "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Ama-dablam view 1743.JPG?width=1000",
+    "category": "mountains",
+    "status": "approved",
+    "is_featured": false
+  },
+  {
+    "name": "Varaha Shikhar",
+    "description": "subpeak of the Annapurna Massif",
+    "latitude": 28.57766,
+    "longitude": 83.80131,
+    "image_url": "https://placehold.co/600x400?text=No+Image",
+    "category": "mountains",
+    "status": "approved",
+    "is_featured": false
+  },
+  {
+    "name": "Dhampus Peak",
+    "description": "mountain in Nepal",
+    "latitude": 28.7979,
+    "longitude": 83.60527,
+    "image_url": "https://placehold.co/600x400?text=No+Image",
+    "category": "mountains",
+    "status": "approved",
+    "is_featured": false
+  },
+  {
+    "name": "Yak Gawa",
+    "description": "mountain in Nepal",
+    "latitude": 28.77849,
+    "longitude": 83.91829,
+    "image_url": "https://placehold.co/600x400?text=No+Image",
+    "category": "mountains",
+    "status": "approved",
+    "is_featured": false
+  },
+  {
+    "name": "Samagoan",
+    "description": "mountain in Nepal",
+    "latitude": 28.58467,
+    "longitude": 84.64339,
+    "image_url": "https://placehold.co/600x400?text=No+Image",
+    "category": "mountains",
+    "status": "approved",
+    "is_featured": false
+  },
+  {
+    "name": "N Chhyarkung Chuli",
+    "description": "mountain in Nepal",
+    "latitude": 28.06675,
+    "longitude": 85.41321,
+    "image_url": "https://placehold.co/600x400?text=No+Image",
+    "category": "mountains",
+    "status": "approved",
+    "is_featured": false
+  },
+  {
+    "name": "Shivapuri Peak",
+    "description": "mountain in Nepal",
+    "latitude": 27.81221,
+    "longitude": 85.38531,
+    "image_url": "https://placehold.co/600x400?text=No+Image",
+    "category": "mountains",
+    "status": "approved",
+    "is_featured": false
+  },
+  {
+    "name": "Machhuwā Ḍā̃ḍā",
+    "description": "",
+    "latitude": 28.2769,
+    "longitude": 85.451,
+    "image_url": "https://placehold.co/600x400?text=No+Image",
+    "category": "mountains",
+    "status": "approved",
+    "is_featured": false
+  },
+  {
+    "name": "Kālsi̇̄ Ḍā̃ḍā",
+    "description": "",
+    "latitude": 28.2601,
+    "longitude": 85.432,
+    "image_url": "https://placehold.co/600x400?text=No+Image",
+    "category": "mountains",
+    "status": "approved",
+    "is_featured": false
+  },
+  {
+    "name": "Bedāṅ Ḍā̃ḍā",
+    "description": "",
+    "latitude": 28.26742,
+    "longitude": 85.38304,
+    "image_url": "https://placehold.co/600x400?text=No+Image",
+    "category": "mountains",
+    "status": "approved",
+    "is_featured": false
+  },
+  {
+    "name": "Liṅsiṅ Himāl",
+    "description": "",
+    "latitude": 28.17482,
+    "longitude": 85.77703,
+    "image_url": "https://placehold.co/600x400?text=No+Image",
+    "category": "mountains",
+    "status": "approved",
+    "is_featured": false
+  },
+  {
+    "name": "Kālo Pokhari̇̄ Himāl",
+    "description": "",
+    "latitude": 28.3081,
+    "longitude": 85.1333,
+    "image_url": "https://placehold.co/600x400?text=No+Image",
+    "category": "mountains",
+    "status": "approved",
+    "is_featured": false
+  },
+  {
+    "name": "Liṅsin Himāl",
+    "description": "",
+    "latitude": 28.177777777778,
+    "longitude": 85.725555555556,
+    "image_url": "https://placehold.co/600x400?text=No+Image",
+    "category": "mountains",
+    "status": "approved",
+    "is_featured": false
+  },
+  {
+    "name": "Panchpokhari̇̄ Lek",
+    "description": "",
+    "latitude": 28.109,
+    "longitude": 85.717,
+    "image_url": "https://placehold.co/600x400?text=No+Image",
+    "category": "mountains",
+    "status": "approved",
+    "is_featured": false
+  },
+  {
+    "name": "Urkiṅ Kāṅgāri̇̄",
+    "description": "",
+    "latitude": 28.175,
+    "longitude": 85.558611111111,
+    "image_url": "https://placehold.co/600x400?text=No+Image",
+    "category": "mountains",
+    "status": "approved",
+    "is_featured": false
+  },
+  {
+    "name": "Ṭapalḍā̃ḍā",
+    "description": "",
+    "latitude": 27.6234,
+    "longitude": 85.6877,
+    "image_url": "https://placehold.co/600x400?text=No+Image",
+    "category": "mountains",
+    "status": "approved",
+    "is_featured": false
+  },
+  {
+    "name": "Gangapurna Lake",
+    "description": "body of water",
+    "latitude": 28.663888888889,
+    "longitude": 84.0175,
+    "image_url": "https://placehold.co/600x400?text=No+Image",
+    "category": "sceneries",
+    "status": "approved",
+    "is_featured": false
+  },
+  {
+    "name": "Purbung",
+    "description": "is a mountain in the Himalayas of Nepal in the province of Gandaki Pradesh",
+    "latitude": 28.801388888889,
+    "longitude": 84.020555555556,
+    "image_url": "https://placehold.co/600x400?text=No+Image",
+    "category": "mountains",
+    "status": "approved",
+    "is_featured": false
+  },
+  {
+    "name": "Maksyā Ḍā̃ḍā",
+    "description": "Mountains in Nepal",
+    "latitude": 29.68814,
+    "longitude": 82.72551,
+    "image_url": "https://placehold.co/600x400?text=No+Image",
+    "category": "mountains",
+    "status": "approved",
+    "is_featured": false
+  },
+  {
+    "name": "Yulkoṅmā Ḍā̃ḍā",
+    "description": "Mountains in Nepal",
+    "latitude": 29.60893,
+    "longitude": 82.72468,
+    "image_url": "https://placehold.co/600x400?text=No+Image",
+    "category": "mountains",
+    "status": "approved",
+    "is_featured": false
+  },
+  {
+    "name": "Rolājen Ḍā̃ḍā",
+    "description": "Mountains in Nepal",
+    "latitude": 29.67084,
+    "longitude": 82.57047,
+    "image_url": "https://placehold.co/600x400?text=No+Image",
+    "category": "mountains",
+    "status": "approved",
+    "is_featured": false
+  },
+  {
+    "name": "Kuldum Ḍā̃ḍā",
+    "description": "Mountains in Nepal",
+    "latitude": 29.62516,
+    "longitude": 82.57007,
+    "image_url": "https://placehold.co/600x400?text=No+Image",
+    "category": "mountains",
+    "status": "approved",
+    "is_featured": false
+  },
+  {
+    "name": "Nāgpi̇̄ Ḍā̃ḍā",
+    "description": "Mountains in Nepal",
+    "latitude": 29.63976,
+    "longitude": 82.6115,
+    "image_url": "https://placehold.co/600x400?text=No+Image",
+    "category": "mountains",
+    "status": "approved",
+    "is_featured": false
+  },
+  {
+    "name": "Chhāliṅ Ḍā̃ḍā",
+    "description": "Mountains in Nepal",
+    "latitude": 29.56001,
+    "longitude": 82.67344,
+    "image_url": "https://placehold.co/600x400?text=No+Image",
+    "category": "mountains",
+    "status": "approved",
+    "is_featured": false
+  },
+  {
+    "name": "Jhoṅpālā Ḍā̃ḍā",
+    "description": "Mountains in Nepal",
+    "latitude": 29.52408,
+    "longitude": 82.72572,
+    "image_url": "https://placehold.co/600x400?text=No+Image",
+    "category": "mountains",
+    "status": "approved",
+    "is_featured": false
+  },
+  {
+    "name": "Nisiṅyāṅ Ḍāḍā̃",
+    "description": "Mountains in Nepal",
+    "latitude": 29.50989,
+    "longitude": 82.7028,
+    "image_url": "https://placehold.co/600x400?text=No+Image",
+    "category": "mountains",
+    "status": "approved",
+    "is_featured": false
+  },
+  {
+    "name": "Ītiṅ Ḍāḍā̃",
+    "description": "Mountains in Nepal",
+    "latitude": 29.51296,
+    "longitude": 82.65284,
+    "image_url": "https://placehold.co/600x400?text=No+Image",
+    "category": "mountains",
+    "status": "approved",
+    "is_featured": false
+  },
+  {
+    "name": "Muga Ḍā̃ḍā",
+    "description": "Mountains in Nepal",
+    "latitude": 29.53448,
+    "longitude": 82.59636,
+    "image_url": "https://placehold.co/600x400?text=No+Image",
+    "category": "mountains",
+    "status": "approved",
+    "is_featured": false
+  },
+  {
+    "name": "Dābsāl Ḍā̃ḍā",
+    "description": "Mountains in Nepal",
+    "latitude": 29.51774,
+    "longitude": 82.51175,
+    "image_url": "https://placehold.co/600x400?text=No+Image",
+    "category": "mountains",
+    "status": "approved",
+    "is_featured": false
+  },
+  {
+    "name": "Mugu Ḍā̃ḍā",
+    "description": "Mountains in Nepal",
+    "latitude": 29.70165,
+    "longitude": 82.55817,
+    "image_url": "https://placehold.co/600x400?text=No+Image",
+    "category": "mountains",
+    "status": "approved",
+    "is_featured": false
+  },
+  {
+    "name": "Chhimi̇̄maru Ḍā̃ḍā",
+    "description": "Mountains in Nepal",
+    "latitude": 29.70009,
+    "longitude": 82.61562,
+    "image_url": "https://placehold.co/600x400?text=No+Image",
+    "category": "mountains",
+    "status": "approved",
+    "is_featured": false
+  },
+  {
+    "name": "Syānāṭh",
+    "description": "Mountain in Nepal",
+    "latitude": 29.61349,
+    "longitude": 82.57101,
+    "image_url": "https://placehold.co/600x400?text=No+Image",
+    "category": "mountains",
+    "status": "approved",
+    "is_featured": false
+  },
+  {
+    "name": "Pāṅkāyāṅ Ḍā̃ḍā",
+    "description": "Mountains in Nepal",
+    "latitude": 29.51162,
+    "longitude": 82.55063,
+    "image_url": "https://placehold.co/600x400?text=No+Image",
+    "category": "mountains",
+    "status": "approved",
+    "is_featured": false
+  },
+  {
+    "name": "Dhumba lake",
+    "description": "fresh water lake in Mustang, Nepal",
+    "latitude": 28.763333333333,
+    "longitude": 83.716388888889,
+    "image_url": "https://placehold.co/600x400?text=No+Image",
+    "category": "sceneries",
+    "status": "approved",
+    "is_featured": false
+  },
+  {
+    "name": "Ponggen Dopku",
+    "description": "mountain in Nepal",
+    "latitude": 28.1626803,
+    "longitude": 85.6129635,
+    "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Langtang Area.jpg?width=1000",
+    "category": "mountains",
+    "status": "approved",
+    "is_featured": false
+  },
+  {
+    "name": "Q105724355",
+    "description": "mountain",
+    "latitude": 27.89,
+    "longitude": 86.97,
+    "image_url": "https://placehold.co/600x400?text=No+Image",
+    "category": "mountains",
+    "status": "approved",
+    "is_featured": false
+  },
+  {
+    "name": "Tserko Ri",
+    "description": "mountain in Nepal",
+    "latitude": 28.2132408,
+    "longitude": 85.6004521,
+    "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Way to langtang.JPG?width=1000",
+    "category": "mountains",
+    "status": "approved",
+    "is_featured": false
+  },
+  {
+    "name": "Parvati Kunda",
+    "description": "lake in Nepal",
+    "latitude": 28.1697923,
+    "longitude": 85.0999524,
+    "image_url": "https://placehold.co/600x400?text=No+Image",
+    "category": "sceneries",
+    "status": "approved",
+    "is_featured": false
+  },
+  {
+    "name": "Timbung Pokhari",
+    "description": "natural lake at 4480m elevation in Nepal",
+    "latitude": 27.4375,
+    "longitude": 88.058333333333,
+    "image_url": "https://placehold.co/600x400?text=No+Image",
+    "category": "sceneries",
+    "status": "approved",
+    "is_featured": false
+  },
+  {
+    "name": "Taalpokhara",
+    "description": "natural lake in Nepal",
+    "latitude": 27.8765,
+    "longitude": 83.8795,
+    "image_url": "https://placehold.co/600x400?text=No+Image",
+    "category": "sceneries",
+    "status": "approved",
+    "is_featured": false
+  },
+  {
+    "name": "Sertojen Ḍā̃ḍā",
+    "description": "Mountains in Nepal",
+    "latitude": 29.67979,
+    "longitude": 82.55368,
+    "image_url": "https://placehold.co/600x400?text=No+Image",
+    "category": "mountains",
+    "status": "approved",
+    "is_featured": false
+  },
+  {
+    "name": "Amotsang",
+    "description": "mountain in Nepal",
+    "latitude": 28.834722222222,
+    "longitude": 84.1725,
+    "image_url": "https://placehold.co/600x400?text=No+Image",
+    "category": "mountains",
+    "status": "approved",
+    "is_featured": false
+  },
+  {
+    "name": "Changdi",
+    "description": "mountain in Nepal and China",
+    "latitude": 29.719166666667,
+    "longitude": 82.798611111111,
+    "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Changdi.jpg?width=1000",
+    "category": "mountains",
+    "status": "approved",
+    "is_featured": false
+  },
+  {
+    "name": "Betkot Lake",
+    "description": "lake in Kanchanpur District, Nepal",
+    "latitude": 29.026666666667,
+    "longitude": 80.320555555556,
+    "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Betkot lake (बेतकोट ताल) 5 - panoramio.jpg?width=1000",
+    "category": "sceneries",
+    "status": "approved",
+    "is_featured": false
+  },
+  {
+    "name": "Chang Samarphu",
+    "description": "mountain in Nepal",
+    "latitude": 27.9712,
+    "longitude": 85.7175,
+    "image_url": "https://placehold.co/600x400?text=No+Image",
+    "category": "mountains",
+    "status": "approved",
+    "is_featured": false
+  },
+  {
+    "name": "Birendra Cave",
+    "description": "cave in Bhalam, Nepal, near the Khola River",
+    "latitude": 28.247421057285,
+    "longitude": 84.004102664881,
+    "image_url": "https://placehold.co/600x400?text=No+Image",
+    "category": "sceneries",
+    "status": "approved",
+    "is_featured": false
+  },
+  {
+    "name": "Panch Pokhari Ramechhap",
+    "description": "lakes in Nepal",
+    "latitude": 27.7313930013,
+    "longitude": 86.42196709,
+    "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Pach Pokhari.jpg?width=1000",
+    "category": "sceneries",
+    "status": "approved",
+    "is_featured": false
+  },
+  {
+    "name": "Pāniyo Tāpā",
+    "description": "mountain in Nepal",
+    "latitude": 27.80418,
+    "longitude": 86.56887,
+    "image_url": "https://placehold.co/600x400?text=No+Image",
+    "category": "mountains",
+    "status": "approved",
+    "is_featured": false
+  }
+]

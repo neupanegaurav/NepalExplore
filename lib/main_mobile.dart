@@ -34,13 +34,23 @@ Future<void> mainMobile() async {
     remoteSource: remoteSource,
     mutationSource: mutationSource,
   );
+  final businessRemoteSource = AppConfig.hasSupabaseConfig
+      ? SupabaseRestBusinessRemoteSource()
+      : JsonFeedBusinessRemoteSource();
+  final businessRepository = BusinessRepository(
+    database: database,
+    remoteSource: businessRemoteSource,
+  );
   final initialSpots = await spotsRepository.loadSpots();
 
   runApp(
     ProviderScope(
       overrides: [
         remoteSourceProvider.overrideWithValue(remoteSource),
+        appDatabaseProvider.overrideWithValue(database),
         spotsRepositoryProvider.overrideWithValue(spotsRepository),
+        businessRepositoryProvider.overrideWithValue(businessRepository),
+        businessRemoteSourceProvider.overrideWithValue(businessRemoteSource),
         initialSpotsProvider.overrideWithValue(initialSpots),
       ],
       child: const NepalExploreMobileApp(),

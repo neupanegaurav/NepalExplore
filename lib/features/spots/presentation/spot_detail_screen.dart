@@ -51,6 +51,7 @@ class SpotDetailScreen extends ConsumerWidget {
                     child: CachedNetworkImage(
                       imageUrl: spot.imageUrl,
                       fit: BoxFit.cover,
+                      memCacheWidth: 800,
                       errorWidget: (context, url, error) => Container(
                         color: theme.colorScheme.surfaceContainerHighest,
                         child: const Icon(
@@ -236,6 +237,7 @@ class SpotDetailScreen extends ConsumerWidget {
                             child: CachedNetworkImage(
                               imageUrl: allImages[index],
                               fit: BoxFit.cover,
+                              memCacheWidth: 400,
                               errorWidget: (context, url, error) => Container(
                                 color:
                                     theme.colorScheme.surfaceContainerHighest,
@@ -465,6 +467,7 @@ class _FullScreenGalleryState extends State<_FullScreenGallery> {
               child: CachedNetworkImage(
                 imageUrl: widget.images[index],
                 fit: BoxFit.contain,
+                memCacheWidth: 1200,
                 errorWidget: (context, url, error) => const Icon(
                   Icons.broken_image,
                   color: Colors.grey,

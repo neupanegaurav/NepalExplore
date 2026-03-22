@@ -3,6 +3,7 @@ import 'package:nepal_explore/features/spots/data/spots_data.dart';
 import 'package:nepal_explore/features/spots/data/spots_mutation_source.dart';
 import 'package:nepal_explore/features/spots/data/spots_remote_source.dart';
 import 'package:nepal_explore/features/spots/domain/tourist_spot.dart';
+import 'package:nepal_explore/features/spots/domain/business.dart';
 import 'package:image_picker/image_picker.dart';
 
 class SpotsSyncReport {
@@ -187,5 +188,38 @@ class SpotsRepository {
 
     final rawDocuments = await database.getAll(collectionName);
     return rawDocuments.map(TouristSpot.fromJson).toList();
+  }
+}
+
+class BusinessRepository {
+  BusinessRepository({
+    required AppDocumentDatabase database,
+    required BusinessRemoteSource remoteSource,
+  }) : _database = database,
+       _remoteSource = remoteSource;
+
+  static const String collectionName = 'businesses';
+
+  final AppDocumentDatabase _database;
+  final BusinessRemoteSource _remoteSource;
+
+  Future<List<Business>> loadBusinesses() async {
+    final rawDocuments = await _database.getAll(collectionName);
+    return rawDocuments.map(Business.fromJson).toList();
+  }
+
+  Future<void> syncFromServer() async {
+    final snapshot = await _remoteSource.fetchSnapshot();
+    await _database.replaceCollection(
+      collectionName,
+      snapshot.businesses.map(
+        (biz) => DatabaseDocument(id: biz.id, payload: biz.toJson()),
+      ),
+    );
+    await _database.markCollectionSynced(
+      collection: collectionName,
+      syncedAt: DateTime.now(),
+      source: snapshot.sourceLabel,
+    );
   }
 }

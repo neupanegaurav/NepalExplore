@@ -26,9 +26,9 @@ final aiInsightsProvider = FutureProvider.family<String, TouristSpot>((
 
   final prompt =
       '''
-    Provide an engaging cultural context, historical anecdote, local lore, 
-    and practical travel tips for a tourist visiting ${spot.name} in Nepal.
-    Keep the response concise, visually appealing, and no longer than 3 paragraphs.
+    Provide a detailed description, precise location, and address details for ${spot.name} in Nepal.
+    The goal is to automatically generate a missing description for our tourist app, focusing on factual information about what the place is and exactly where it is located.
+    Keep the response concise, visually appealing, formatted nicely with markdown, and no longer than 3 paragraphs.
   ''';
 
   try {

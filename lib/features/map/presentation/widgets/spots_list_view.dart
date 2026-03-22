@@ -55,7 +55,11 @@ class SpotsListView extends ConsumerWidget {
               });
             }
 
-            return CustomScrollView(
+            return RefreshIndicator(
+              onRefresh: () async {
+                await ref.read(spotsProvider.notifier).syncSpots();
+              },
+              child: CustomScrollView(
               slivers: [
                 SliverToBoxAdapter(
                   child: SizedBox(height: useTabletLayout ? 152 : 140),
@@ -278,7 +282,7 @@ class SpotsListView extends ConsumerWidget {
                     }),
                 const SliverToBoxAdapter(child: SizedBox(height: 48)),
               ],
-            );
+            ));
           },
           loading: () => const Center(child: CircularProgressIndicator()),
           error: (error, stackTrace) => Center(

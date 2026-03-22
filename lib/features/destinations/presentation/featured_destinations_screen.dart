@@ -6,7 +6,9 @@ import 'package:url_launcher/url_launcher.dart';
 import 'package:nepal_explore/features/map/presentation/providers/map_provider.dart';
 import 'package:nepal_explore/features/admin/presentation/business_promotion_form.dart';
 import 'package:nepal_explore/features/spots/domain/tourist_spot.dart';
+import 'package:nepal_explore/features/spots/domain/business.dart';
 import 'package:nepal_explore/features/spots/presentation/spot_detail_screen.dart';
+import 'package:nepal_explore/features/businesses/presentation/business_detail_screen.dart';
 import 'package:nepal_explore/core/theme/theme.dart';
 
 enum SortOption { featured, priceLow, distance }
@@ -32,41 +34,42 @@ class _FeaturedDestinationsScreenState
   @override
   Widget build(BuildContext context) {
     final spots = ref.watch(spotsProvider);
+    final businessesAsync = ref.watch(businessesProvider);
+    final businesses = businessesAsync.value ?? [];
     final theme = Theme.of(context);
     final userLocAsync = ref.watch(userLocationProvider);
     final userPos = userLocAsync.value;
     final Distance distCalc = const Distance();
 
-    var businessSpots = spots
-        .where(
-          (s) =>
-              s.status == ApprovalStatus.approved &&
-              (s.isFeatured ||
-                  s.category == SpotCategory.hotels ||
-                  s.category == SpotCategory.dining ||
-                  s.category == SpotCategory.guides ||
-                  s.category == SpotCategory.tickets),
-        )
-        .toList();
+    // Filter and combine data
+    var combinedItems = <dynamic>[
+      ...spots.where((s) => s.status == ApprovalStatus.approved && s.isFeatured),
+      ...businesses.where((b) => b.status == ApprovalStatus.approved),
+    ];
 
     // Apply Sorting
     if (_selectedSort == SortOption.distance && userPos != null) {
       final userLatLng = LatLng(userPos.latitude, userPos.longitude);
-      businessSpots.sort((a, b) {
-        final distA = distCalc.as(LengthUnit.Meter, userLatLng, a.location);
-        final distB = distCalc.as(LengthUnit.Meter, userLatLng, b.location);
+      combinedItems.sort((a, b) {
+        final locA = a is TouristSpot ? a.location : (a as Business).location;
+        final locB = b is TouristSpot ? b.location : (b as Business).location;
+        final distA = distCalc.as(LengthUnit.Meter, userLatLng, locA);
+        final distB = distCalc.as(LengthUnit.Meter, userLatLng, locB);
         return distA.compareTo(distB);
       });
     } else if (_selectedSort == SortOption.priceLow) {
-      businessSpots.sort(
-        (a, b) =>
-            _priceValue(a.priceRange).compareTo(_priceValue(b.priceRange)),
-      );
+      combinedItems.sort((a, b) {
+        final priceA = a is TouristSpot ? _priceValue(a.priceRange) : 0;
+        final priceB = b is TouristSpot ? _priceValue(b.priceRange) : 0;
+        return priceA.compareTo(priceB);
+      });
     } else {
       // Featured
-      businessSpots.sort(
-        (a, b) => (b.isFeatured ? 1 : 0).compareTo(a.isFeatured ? 1 : 0),
-      );
+      combinedItems.sort((a, b) {
+        final featA = a is TouristSpot ? a.isFeatured : (a as Business).isFeatured;
+        final featB = b is TouristSpot ? b.isFeatured : (b as Business).isFeatured;
+        return (featB ? 1 : 0).compareTo(featA ? 1 : 0);
+      });
     }
 
     return Scaffold(
@@ -79,7 +82,12 @@ class _FeaturedDestinationsScreenState
         elevation: 0,
         centerTitle: false,
       ),
-      body: CustomScrollView(
+      body: RefreshIndicator(
+        onRefresh: () async {
+          await ref.read(spotsProvider.notifier).syncSpots();
+          await ref.read(businessesProvider.notifier).refresh();
+        },
+        child: CustomScrollView(
         slivers: [
           // Marketing Banner
           SliverToBoxAdapter(
@@ -215,13 +223,19 @@ class _FeaturedDestinationsScreenState
                   crossAxisSpacing: 16,
                 ),
                 delegate: SliverChildBuilderDelegate((context, index) {
-                  final spot = businessSpots[index];
+                  final item = combinedItems[index];
+                  final name = item is TouristSpot ? item.name : (item as Business).name;
+                  final imageUrl = item is TouristSpot ? item.imageUrl : (item as Business).imageUrl;
+                  final isFeatured = item is TouristSpot ? item.isFeatured : (item as Business).isFeatured;
+                  final location = item is TouristSpot ? item.location : (item as Business).location;
+                  final priceRange = item is TouristSpot ? item.priceRange : null;
+
                   String distStr = '';
                   if (userPos != null) {
                     final m = distCalc.as(
                       LengthUnit.Meter,
                       LatLng(userPos.latitude, userPos.longitude),
-                      spot.location,
+                      location,
                     );
                     distStr = m > 1000
                         ? '${(m / 1000).toStringAsFixed(1)} km'
@@ -235,8 +249,13 @@ class _FeaturedDestinationsScreenState
                       borderRadius: BorderRadius.circular(16),
                     ),
                     child: InkWell(
-                      onTap: () =>
-                          Navigator.push(context, SpotDetailScreen.route(spot)),
+                      onTap: () {
+                        if (item is TouristSpot) {
+                          Navigator.push(context, SpotDetailScreen.route(item));
+                        } else if (item is Business) {
+                          Navigator.push(context, BusinessDetailScreen.route(item));
+                        }
+                      },
                       child: Column(
                         crossAxisAlignment: CrossAxisAlignment.start,
                         children: [
@@ -246,10 +265,11 @@ class _FeaturedDestinationsScreenState
                               fit: StackFit.expand,
                               children: [
                                 CachedNetworkImage(
-                                  imageUrl: spot.imageUrl,
+                                  imageUrl: imageUrl,
                                   fit: BoxFit.cover,
+                                  memCacheWidth: 600,
                                 ),
-                                if (spot.isFeatured)
+                                if (isFeatured)
                                   Positioned(
                                     top: 8,
                                     left: 8,
@@ -285,7 +305,7 @@ class _FeaturedDestinationsScreenState
                                     MainAxisAlignment.spaceBetween,
                                 children: [
                                   Text(
-                                    spot.name,
+                                    name,
                                     style: const TextStyle(
                                       fontWeight: FontWeight.bold,
                                       fontSize: 13,
@@ -293,9 +313,9 @@ class _FeaturedDestinationsScreenState
                                     maxLines: 1,
                                     overflow: TextOverflow.ellipsis,
                                   ),
-                                  if (spot.priceRange != null)
+                                  if (priceRange != null)
                                     Text(
-                                      spot.priceRange!,
+                                      priceRange,
                                       style: TextStyle(
                                         color: Colors.green[700],
                                         fontWeight: FontWeight.bold,
@@ -329,19 +349,28 @@ class _FeaturedDestinationsScreenState
                       ),
                     ),
                   );
-                }, childCount: businessSpots.length),
+                }, childCount: combinedItems.length),
               ),
             )
           else
             SliverList(
               delegate: SliverChildBuilderDelegate((context, index) {
-                final spot = businessSpots[index];
+                final item = combinedItems[index];
+                final name = item is TouristSpot ? item.name : (item as Business).name;
+                final imageUrl = item is TouristSpot ? item.imageUrl : (item as Business).imageUrl;
+                final isFeatured = item is TouristSpot ? item.isFeatured : (item as Business).isFeatured;
+                final location = item is TouristSpot ? item.location : (item as Business).location;
+                final category = item is TouristSpot ? item.category : (item as Business).category;
+                final priceRange = item is TouristSpot ? item.priceRange : null;
+                final promotionalMessage = item is TouristSpot ? item.promotionalMessage : null;
+                final contactPhone = item is TouristSpot ? item.contactPhone : (item as Business).contactPhone;
+
                 String distStr = '';
                 if (userPos != null) {
                   final m = distCalc.as(
                     LengthUnit.Meter,
                     LatLng(userPos.latitude, userPos.longitude),
-                    spot.location,
+                    location,
                   );
                   distStr = m > 1000
                       ? '${(m / 1000).toStringAsFixed(1)} km'
@@ -359,8 +388,13 @@ class _FeaturedDestinationsScreenState
                   ),
                   elevation: 2,
                   child: InkWell(
-                    onTap: () =>
-                        Navigator.push(context, SpotDetailScreen.route(spot)),
+                    onTap: () {
+                      if (item is TouristSpot) {
+                        Navigator.push(context, SpotDetailScreen.route(item));
+                      } else if (item is Business) {
+                        Navigator.push(context, BusinessDetailScreen.route(item));
+                      }
+                    },
                     child: Column(
                       crossAxisAlignment: CrossAxisAlignment.start,
                       children: [
@@ -372,10 +406,11 @@ class _FeaturedDestinationsScreenState
                             fit: StackFit.expand,
                             children: [
                               CachedNetworkImage(
-                                imageUrl: spot.imageUrl,
+                                imageUrl: imageUrl,
                                 fit: BoxFit.cover,
+                                memCacheWidth: 600,
                               ),
-                              if (spot.isFeatured)
+                              if (isFeatured)
                                 Positioned(
                                   top: 12,
                                   left: 12,
@@ -394,10 +429,10 @@ class _FeaturedDestinationsScreenState
                                         color: Colors.white,
                                         fontSize: 12,
                                         fontWeight: FontWeight.bold,
+                                        ),
                                       ),
                                     ),
                                   ),
-                                ),
                             ],
                           ),
                         ),
@@ -413,14 +448,14 @@ class _FeaturedDestinationsScreenState
                                 children: [
                                   Expanded(
                                     child: Text(
-                                      spot.name,
+                                      name,
                                       style: theme.textTheme.titleLarge
                                           ?.copyWith(
                                             fontWeight: FontWeight.bold,
                                           ),
                                     ),
                                   ),
-                                  if (spot.priceRange != null)
+                                  if (priceRange != null)
                                     Container(
                                       padding: const EdgeInsets.symmetric(
                                         horizontal: 8,
@@ -433,7 +468,7 @@ class _FeaturedDestinationsScreenState
                                         borderRadius: BorderRadius.circular(6),
                                       ),
                                       child: Text(
-                                        spot.priceRange!,
+                                        priceRange,
                                         style: TextStyle(
                                           color: Colors.green[800],
                                           fontWeight: FontWeight.bold,
@@ -443,9 +478,9 @@ class _FeaturedDestinationsScreenState
                                 ],
                               ),
                               const SizedBox(height: 6),
-                              if (spot.promotionalMessage != null)
+                              if (promotionalMessage != null)
                                 Text(
-                                  '"${spot.promotionalMessage!}"',
+                                  '"$promotionalMessage"',
                                   style: theme.textTheme.bodyMedium?.copyWith(
                                     fontStyle: FontStyle.italic,
                                     color: theme.colorScheme.secondary,
@@ -474,7 +509,7 @@ class _FeaturedDestinationsScreenState
                                   ),
                                   const SizedBox(width: 4),
                                   Text(
-                                    spot.category.name.toUpperCase(),
+                                    category.name.toUpperCase(),
                                     style: theme.textTheme.bodySmall,
                                   ),
                                 ],
@@ -486,10 +521,10 @@ class _FeaturedDestinationsScreenState
                                   Expanded(
                                     child: OutlinedButton.icon(
                                       onPressed: () {
-                                        if (spot.contactPhone != null) {
+                                        if (contactPhone != null) {
                                           launchUrl(
                                             Uri.parse(
-                                              'tel:${spot.contactPhone}',
+                                              'tel:$contactPhone',
                                             ),
                                           );
                                         } else {
@@ -514,7 +549,7 @@ class _FeaturedDestinationsScreenState
                                       onPressed: () {
                                         launchUrl(
                                           Uri.parse(
-                                            'https://www.google.com/maps/search/?api=1&query=${spot.location.latitude},${spot.location.longitude}',
+                                            'https://www.google.com/maps/search/?api=1&query=${location.latitude},${location.longitude}',
                                           ),
                                         );
                                       },
@@ -534,11 +569,11 @@ class _FeaturedDestinationsScreenState
                     ),
                   ),
                 );
-              }, childCount: businessSpots.length),
+              }, childCount: combinedItems.length),
             ),
           const SliverToBoxAdapter(child: SizedBox(height: 32)),
         ],
-      ),
+      )),
     );
   }
 }

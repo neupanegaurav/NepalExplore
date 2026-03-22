@@ -171,7 +171,13 @@ class _AddSpotScreenState extends ConsumerState<AddSpotScreen> {
             labelText: 'Category',
             prefixIcon: Icon(Icons.category),
           ),
-          items: SpotCategory.values.map((category) {
+          items: SpotCategory.values.where((category) {
+            return category != SpotCategory.hotels &&
+                   category != SpotCategory.dining &&
+                   category != SpotCategory.touristAgents &&
+                   category != SpotCategory.tickets &&
+                   category != SpotCategory.guides;
+          }).map((category) {
             final label = category.name.replaceAll(
               RegExp(r'(?<!^)(?=[A-Z])'),
               ' ',
