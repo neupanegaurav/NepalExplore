@@ -10,7 +10,7 @@ class Business {
   final String imageUrl;
   final List<String> userImages;
   final ApprovalStatus status;
-  
+
   final String? contactPhone;
   final String? contactEmail;
   final String? website;
@@ -59,8 +59,12 @@ class Business {
         orElse: () => ApprovalStatus.approved,
       ),
       isFeatured: json['is_featured'] as bool? ?? false,
-      createdAt: json['created_at'] != null ? DateTime.parse(json['created_at'] as String) : null,
-      updatedAt: json['updated_at'] != null ? DateTime.parse(json['updated_at'] as String) : null,
+      createdAt: json['created_at'] != null
+          ? DateTime.parse(json['created_at'] as String)
+          : null,
+      updatedAt: json['updated_at'] != null
+          ? DateTime.parse(json['updated_at'] as String)
+          : null,
     );
   }
 

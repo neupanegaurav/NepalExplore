@@ -60,229 +60,235 @@ class SpotsListView extends ConsumerWidget {
                 await ref.read(spotsProvider.notifier).syncSpots();
               },
               child: CustomScrollView(
-              slivers: [
-                SliverToBoxAdapter(
-                  child: SizedBox(height: useTabletLayout ? 152 : 140),
-                ),
-                if (groupedSpots.isEmpty)
+                slivers: [
                   SliverToBoxAdapter(
-                    child: Center(
-                      child: Padding(
-                        padding: const EdgeInsets.only(top: 100),
-                        child: Column(
-                          mainAxisAlignment: MainAxisAlignment.center,
-                          children: [
-                            Icon(
-                              Icons.search_off,
-                              size: 64,
-                              color: theme.colorScheme.primary.withValues(
-                                alpha: 0.5,
+                    child: SizedBox(height: useTabletLayout ? 152 : 140),
+                  ),
+                  if (groupedSpots.isEmpty)
+                    SliverToBoxAdapter(
+                      child: Center(
+                        child: Padding(
+                          padding: const EdgeInsets.only(top: 100),
+                          child: Column(
+                            mainAxisAlignment: MainAxisAlignment.center,
+                            children: [
+                              Icon(
+                                Icons.search_off,
+                                size: 64,
+                                color: theme.colorScheme.primary.withValues(
+                                  alpha: 0.5,
+                                ),
                               ),
-                            ),
-                            const SizedBox(height: 16),
-                            Text(
-                              'No places found',
-                              style: theme.textTheme.titleMedium,
-                            ),
-                          ],
+                              const SizedBox(height: 16),
+                              Text(
+                                'No places found',
+                                style: theme.textTheme.titleMedium,
+                              ),
+                            ],
+                          ),
                         ),
                       ),
                     ),
-                  ),
-                ...SpotCategory.values
-                    .where((category) => groupedSpots.containsKey(category))
-                    .map((category) {
-                      final categorySpots = groupedSpots[category]!;
-                      final label = category.name.replaceAll(
-                        RegExp(r'(?<!^)(?=[A-Z])'),
-                        ' ',
-                      );
-                      final displayLabel =
-                          label[0].toUpperCase() + label.substring(1);
+                  ...SpotCategory.values
+                      .where((category) => groupedSpots.containsKey(category))
+                      .map((category) {
+                        final categorySpots = groupedSpots[category]!;
+                        final label = category.name.replaceAll(
+                          RegExp(r'(?<!^)(?=[A-Z])'),
+                          ' ',
+                        );
+                        final displayLabel =
+                            label[0].toUpperCase() + label.substring(1);
 
-                      return SliverMainAxisGroup(
-                        slivers: [
-                          SliverToBoxAdapter(
-                            child: Padding(
-                              padding: EdgeInsets.fromLTRB(
-                                horizontalPadding,
-                                24,
-                                horizontalPadding,
-                                12,
-                              ),
-                              child: Row(
-                                children: [
-                                  Icon(
-                                    Icons.category,
-                                    color: theme.colorScheme.primary,
-                                    size: 20,
-                                  ),
-                                  const SizedBox(width: 8),
-                                  Text(
-                                    displayLabel,
-                                    style: theme.textTheme.titleLarge?.copyWith(
-                                      fontWeight: FontWeight.bold,
-                                    ),
-                                  ),
-                                  const Spacer(),
-                                  Text(
-                                    '${categorySpots.length}',
-                                    style: TextStyle(
+                        return SliverMainAxisGroup(
+                          slivers: [
+                            SliverToBoxAdapter(
+                              child: Padding(
+                                padding: EdgeInsets.fromLTRB(
+                                  horizontalPadding,
+                                  24,
+                                  horizontalPadding,
+                                  12,
+                                ),
+                                child: Row(
+                                  children: [
+                                    Icon(
+                                      Icons.category,
                                       color: theme.colorScheme.primary,
-                                      fontWeight: FontWeight.bold,
+                                      size: 20,
                                     ),
-                                  ),
-                                ],
+                                    const SizedBox(width: 8),
+                                    Text(
+                                      displayLabel,
+                                      style: theme.textTheme.titleLarge
+                                          ?.copyWith(
+                                            fontWeight: FontWeight.bold,
+                                          ),
+                                    ),
+                                    const Spacer(),
+                                    Text(
+                                      '${categorySpots.length}',
+                                      style: TextStyle(
+                                        color: theme.colorScheme.primary,
+                                        fontWeight: FontWeight.bold,
+                                      ),
+                                    ),
+                                  ],
+                                ),
                               ),
                             ),
-                          ),
-                          SliverPadding(
-                            padding: EdgeInsets.symmetric(
-                              horizontal: horizontalPadding,
-                            ),
-                            sliver: SliverGrid(
-                              gridDelegate:
-                                  SliverGridDelegateWithFixedCrossAxisCount(
-                                    crossAxisCount: crossAxisCount,
-                                    childAspectRatio: 0.8,
-                                    mainAxisSpacing: 16,
-                                    crossAxisSpacing: 16,
-                                  ),
-                              delegate: SliverChildBuilderDelegate((
-                                context,
-                                index,
-                              ) {
-                                final spot = categorySpots[index];
-                                final meters = distCalc.as(
-                                  LengthUnit.Meter,
-                                  userLatLng,
-                                  spot.location,
-                                );
-                                final distanceLabel = meters > 1000
-                                    ? '${(meters / 1000).toStringAsFixed(1)} km'
-                                    : '${meters}m';
-
-                                return Card(
-                                  elevation: 2,
-                                  clipBehavior: Clip.antiAlias,
-                                  shape: RoundedRectangleBorder(
-                                    borderRadius: BorderRadius.circular(16),
-                                  ),
-                                  child: InkWell(
-                                    onTap: () => Navigator.push(
-                                      context,
-                                      SpotDetailScreen.route(spot),
+                            SliverPadding(
+                              padding: EdgeInsets.symmetric(
+                                horizontal: horizontalPadding,
+                              ),
+                              sliver: SliverGrid(
+                                gridDelegate:
+                                    SliverGridDelegateWithFixedCrossAxisCount(
+                                      crossAxisCount: crossAxisCount,
+                                      childAspectRatio: 0.8,
+                                      mainAxisSpacing: 16,
+                                      crossAxisSpacing: 16,
                                     ),
-                                    child: Column(
-                                      crossAxisAlignment:
-                                          CrossAxisAlignment.start,
-                                      children: [
-                                        Expanded(
-                                          flex: 3,
-                                          child: Stack(
-                                            fit: StackFit.expand,
-                                            children: [
-                                              CachedNetworkImage(
-                                                imageUrl: spot.imageUrl,
-                                                fit: BoxFit.cover,
-                                                errorWidget: (context, url, error) {
-                                                  return Container(
-                                                    color: theme
-                                                        .colorScheme
-                                                        .surfaceContainerHighest,
-                                                    child: const Icon(
-                                                      Icons.photo,
-                                                      color: Colors.grey,
-                                                    ),
-                                                  );
-                                                },
-                                              ),
-                                              if (spot.isFeatured)
-                                                Positioned(
-                                                  top: 8,
-                                                  right: 8,
-                                                  child: Container(
-                                                    padding:
-                                                        const EdgeInsets.all(4),
-                                                    decoration:
-                                                        const BoxDecoration(
-                                                          color: AppTheme
-                                                              .accentOrange,
-                                                          shape:
-                                                              BoxShape.circle,
-                                                        ),
-                                                    child: const Icon(
-                                                      Icons.star,
-                                                      color: Colors.white,
-                                                      size: 12,
-                                                    ),
-                                                  ),
-                                                ),
-                                            ],
-                                          ),
-                                        ),
-                                        Expanded(
-                                          flex: 2,
-                                          child: Padding(
-                                            padding: const EdgeInsets.all(10),
-                                            child: Column(
-                                              crossAxisAlignment:
-                                                  CrossAxisAlignment.start,
-                                              mainAxisAlignment:
-                                                  MainAxisAlignment
-                                                      .spaceBetween,
+                                delegate: SliverChildBuilderDelegate((
+                                  context,
+                                  index,
+                                ) {
+                                  final spot = categorySpots[index];
+                                  final meters = distCalc.as(
+                                    LengthUnit.Meter,
+                                    userLatLng,
+                                    spot.location,
+                                  );
+                                  final distanceLabel = meters > 1000
+                                      ? '${(meters / 1000).toStringAsFixed(1)} km'
+                                      : '${meters}m';
+
+                                  return Card(
+                                    elevation: 2,
+                                    clipBehavior: Clip.antiAlias,
+                                    shape: RoundedRectangleBorder(
+                                      borderRadius: BorderRadius.circular(16),
+                                    ),
+                                    child: InkWell(
+                                      onTap: () => Navigator.push(
+                                        context,
+                                        SpotDetailScreen.route(spot),
+                                      ),
+                                      child: Column(
+                                        crossAxisAlignment:
+                                            CrossAxisAlignment.start,
+                                        children: [
+                                          Expanded(
+                                            flex: 3,
+                                            child: Stack(
+                                              fit: StackFit.expand,
                                               children: [
-                                                Text(
-                                                  spot.name,
-                                                  style: const TextStyle(
-                                                    fontWeight: FontWeight.bold,
-                                                    fontSize: 13,
-                                                  ),
-                                                  maxLines: 2,
-                                                  overflow:
-                                                      TextOverflow.ellipsis,
+                                                CachedNetworkImage(
+                                                  imageUrl: spot.imageUrl,
+                                                  fit: BoxFit.cover,
+                                                  errorWidget:
+                                                      (context, url, error) {
+                                                        return Container(
+                                                          color: theme
+                                                              .colorScheme
+                                                              .surfaceContainerHighest,
+                                                          child: const Icon(
+                                                            Icons.photo,
+                                                            color: Colors.grey,
+                                                          ),
+                                                        );
+                                                      },
                                                 ),
-                                                Row(
-                                                  children: [
-                                                    Icon(
-                                                      Icons.location_on,
-                                                      size: 12,
-                                                      color: theme
-                                                          .colorScheme
-                                                          .primary,
-                                                    ),
-                                                    const SizedBox(width: 4),
-                                                    Text(
-                                                      distanceLabel,
-                                                      style: TextStyle(
-                                                        fontSize: 11,
-                                                        color: theme
-                                                            .colorScheme
-                                                            .onSurface
-                                                            .withValues(
-                                                              alpha: 0.7,
-                                                            ),
+                                                if (spot.isFeatured)
+                                                  Positioned(
+                                                    top: 8,
+                                                    right: 8,
+                                                    child: Container(
+                                                      padding:
+                                                          const EdgeInsets.all(
+                                                            4,
+                                                          ),
+                                                      decoration:
+                                                          const BoxDecoration(
+                                                            color: AppTheme
+                                                                .accentOrange,
+                                                            shape:
+                                                                BoxShape.circle,
+                                                          ),
+                                                      child: const Icon(
+                                                        Icons.star,
+                                                        color: Colors.white,
+                                                        size: 12,
                                                       ),
                                                     ),
-                                                  ],
-                                                ),
+                                                  ),
                                               ],
                                             ),
                                           ),
-                                        ),
-                                      ],
+                                          Expanded(
+                                            flex: 2,
+                                            child: Padding(
+                                              padding: const EdgeInsets.all(10),
+                                              child: Column(
+                                                crossAxisAlignment:
+                                                    CrossAxisAlignment.start,
+                                                mainAxisAlignment:
+                                                    MainAxisAlignment
+                                                        .spaceBetween,
+                                                children: [
+                                                  Text(
+                                                    spot.name,
+                                                    style: const TextStyle(
+                                                      fontWeight:
+                                                          FontWeight.bold,
+                                                      fontSize: 13,
+                                                    ),
+                                                    maxLines: 2,
+                                                    overflow:
+                                                        TextOverflow.ellipsis,
+                                                  ),
+                                                  Row(
+                                                    children: [
+                                                      Icon(
+                                                        Icons.location_on,
+                                                        size: 12,
+                                                        color: theme
+                                                            .colorScheme
+                                                            .primary,
+                                                      ),
+                                                      const SizedBox(width: 4),
+                                                      Text(
+                                                        distanceLabel,
+                                                        style: TextStyle(
+                                                          fontSize: 11,
+                                                          color: theme
+                                                              .colorScheme
+                                                              .onSurface
+                                                              .withValues(
+                                                                alpha: 0.7,
+                                                              ),
+                                                        ),
+                                                      ),
+                                                    ],
+                                                  ),
+                                                ],
+                                              ),
+                                            ),
+                                          ),
+                                        ],
+                                      ),
                                     ),
-                                  ),
-                                );
-                              }, childCount: categorySpots.length),
+                                  );
+                                }, childCount: categorySpots.length),
+                              ),
                             ),
-                          ),
-                        ],
-                      );
-                    }),
-                const SliverToBoxAdapter(child: SizedBox(height: 48)),
-              ],
-            ));
+                          ],
+                        );
+                      }),
+                  const SliverToBoxAdapter(child: SizedBox(height: 48)),
+                ],
+              ),
+            );
           },
           loading: () => const Center(child: CircularProgressIndicator()),
           error: (error, stackTrace) => Center(

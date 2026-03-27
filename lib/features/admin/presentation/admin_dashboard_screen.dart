@@ -77,10 +77,9 @@ class _AdminDashboardScreenState extends ConsumerState<AdminDashboardScreen> {
   }
 
   Future<void> _refreshDashboard() async {
-    final previousSpots = ref.read(adminSpotsControllerProvider).maybeWhen(
-      data: (spots) => spots,
-      orElse: () => const <TouristSpot>[],
-    );
+    final previousSpots = ref
+        .read(adminSpotsControllerProvider)
+        .maybeWhen(data: (spots) => spots, orElse: () => const <TouristSpot>[]);
     final previousPendingIds = previousSpots
         .where((spot) => spot.status == ApprovalStatus.pending)
         .map((spot) => spot.id)

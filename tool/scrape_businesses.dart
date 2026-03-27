@@ -28,8 +28,14 @@ LIMIT 5000
 
   final url = Uri.parse('https://query.wikidata.org/sparql');
   final request = await HttpClient().postUrl(url);
-  request.headers.set(HttpHeaders.acceptHeader, 'application/sparql-results+json');
-  request.headers.set(HttpHeaders.contentTypeHeader, 'application/sparql-query');
+  request.headers.set(
+    HttpHeaders.acceptHeader,
+    'application/sparql-results+json',
+  );
+  request.headers.set(
+    HttpHeaders.contentTypeHeader,
+    'application/sparql-query',
+  );
   request.headers.set('User-Agent', 'ExploreNepal/1.0 (Dart/HttpClient)');
   request.write(query);
 
@@ -41,12 +47,12 @@ LIMIT 5000
 
   final responseBody = await response.transform(utf8.decoder).join();
   final data = jsonDecode(responseBody);
-  
+
   final results = data['results']['bindings'] as List<dynamic>;
   print('Found ${results.length} businesses.');
-  
+
   final businesses = <Map<String, dynamic>>[];
-  
+
   for (final item in results) {
     final name = item['placeLabel']?['value'] ?? '';
     final description = item['placeDescription']?['value'] ?? '';
@@ -57,17 +63,20 @@ LIMIT 5000
     final phone = item['phone']?['value'] ?? '';
     final email = item['email']?['value'] ?? '';
     final website = item['website']?['value'] ?? '';
-    
+
     // Transform Wikimedia URL to thumbnail if possible
     if (image.contains('commons.wikimedia.org')) {
       final fileName = Uri.decodeFull(image.split('/').last);
-      image = 'https://commons.wikimedia.org/wiki/Special:FilePath/$fileName?width=1000';
+      image =
+          'https://commons.wikimedia.org/wiki/Special:FilePath/$fileName?width=1000';
     } else if (image.isEmpty) {
       image = 'https://placehold.co/600x400?text=No+Image';
     }
-    
-    if (name.isEmpty || (name.startsWith('Q') && RegExp(r'^Q\d+\$').hasMatch(name))) continue;
-    
+
+    if (name.isEmpty ||
+        (name.startsWith('Q') && RegExp(r'^Q\d+\$').hasMatch(name)))
+      continue;
+
     String category = _mapCategory(instanceOf, name, description);
 
     businesses.add({
@@ -91,24 +100,39 @@ LIMIT 5000
     uniqueBusinesses[biz['name'] as String] = biz;
   }
 
-  final finalText = const JsonEncoder.withIndent('  ').convert(uniqueBusinesses.values.toList());
+  final finalText = const JsonEncoder.withIndent(
+    '  ',
+  ).convert(uniqueBusinesses.values.toList());
   File('server/wikidata_businesses.json').writeAsStringSync(finalText);
-  print('Saved ${uniqueBusinesses.length} unique businesses to server/wikidata_businesses.json');
+  print(
+    'Saved ${uniqueBusinesses.length} unique businesses to server/wikidata_businesses.json',
+  );
 }
 
 String _mapCategory(String instanceOf, String name, String description) {
   final fullText = '$name $description'.toLowerCase();
-  
-  if (instanceOf.contains('Q8701') || fullText.contains('hotel') || fullText.contains('resort') || fullText.contains('guest house') || fullText.contains('inn')) {
+
+  if (instanceOf.contains('Q8701') ||
+      fullText.contains('hotel') ||
+      fullText.contains('resort') ||
+      fullText.contains('guest house') ||
+      fullText.contains('inn')) {
     return 'hotels';
   }
-  if (instanceOf.contains('Q11707') || fullText.contains('restaurant') || fullText.contains('cafe') || fullText.contains('dining') || fullText.contains('food')) {
+  if (instanceOf.contains('Q11707') ||
+      fullText.contains('restaurant') ||
+      fullText.contains('cafe') ||
+      fullText.contains('dining') ||
+      fullText.contains('food')) {
     return 'dining';
   }
   if (instanceOf.contains('Q18701') || instanceOf.contains('Q12262')) {
     return 'dining'; // Group bars/clubs under dining for now
   }
-  if (fullText.contains('travel') || fullText.contains('agent') || fullText.contains('trekking') || fullText.contains('expedition')) {
+  if (fullText.contains('travel') ||
+      fullText.contains('agent') ||
+      fullText.contains('trekking') ||
+      fullText.contains('expedition')) {
     return 'touristAgents';
   }
   if (fullText.contains('ticket')) {
@@ -117,6 +141,6 @@ String _mapCategory(String instanceOf, String name, String description) {
   if (fullText.contains('guide')) {
     return 'guides';
   }
-  
+
   return 'dining'; // Default to dining or we can add 'other' later
 }

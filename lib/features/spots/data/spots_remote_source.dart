@@ -175,13 +175,15 @@ class SupabaseRestBusinessRemoteSource implements BusinessRemoteSource {
     }
 
     final projectUri = Uri.parse(_projectUrl);
-    final requestUri = projectUri.resolve('/rest/v1/$table').replace(
-      queryParameters: const {
-        'select': '*',
-        'status': 'eq.approved',
-        'order': 'updated_at.desc',
-      },
-    );
+    final requestUri = projectUri
+        .resolve('/rest/v1/$table')
+        .replace(
+          queryParameters: const {
+            'select': '*',
+            'status': 'eq.approved',
+            'order': 'updated_at.desc',
+          },
+        );
 
     final response = await _client.get(
       requestUri,
@@ -212,7 +214,8 @@ class SupabaseRestBusinessRemoteSource implements BusinessRemoteSource {
 class JsonFeedBusinessRemoteSource implements BusinessRemoteSource {
   JsonFeedBusinessRemoteSource({http.Client? client, Uri? feedUri})
     : _client = client ?? http.Client(),
-      feedUri = feedUri ?? Uri.parse('${AppConfig.spotsFeedUrl}/businesses.json');
+      feedUri =
+          feedUri ?? Uri.parse('${AppConfig.spotsFeedUrl}/businesses.json');
 
   final http.Client _client;
   final Uri feedUri;

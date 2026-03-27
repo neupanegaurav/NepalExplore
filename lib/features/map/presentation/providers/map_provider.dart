@@ -112,9 +112,10 @@ final businessRemoteSourceProvider = Provider<BusinessRemoteSource>((ref) {
   return JsonFeedBusinessRemoteSource();
 });
 
-final businessesProvider = AsyncNotifierProvider<BusinessesNotifier, List<Business>>(
-  BusinessesNotifier.new,
-);
+final businessesProvider =
+    AsyncNotifierProvider<BusinessesNotifier, List<Business>>(
+      BusinessesNotifier.new,
+    );
 
 class BusinessesNotifier extends AsyncNotifier<List<Business>> {
   late final BusinessRepository _repository;

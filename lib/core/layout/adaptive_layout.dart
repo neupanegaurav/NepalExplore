@@ -13,8 +13,7 @@ class AppAdaptiveLayout {
     final resolvedWidth = width ?? size.width;
     final shortestSide = math.min(size.width, size.height);
 
-    return resolvedWidth >= tabletBreakpoint ||
-        shortestSide >= 600;
+    return resolvedWidth >= tabletBreakpoint || shortestSide >= 600;
   }
 
   static bool useDesktopLayout(BuildContext context, {double? width}) {
@@ -39,7 +38,6 @@ class AppAdaptiveLayout {
       vertical: useTablet ? 24 : 16,
     );
   }
-
 }
 
 class ResponsiveContent extends StatelessWidget {

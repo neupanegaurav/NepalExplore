@@ -204,21 +204,24 @@ class _BusinessPromotionFormScreenState
                         labelText: 'Category',
                         border: OutlineInputBorder(),
                       ),
-                      items: SpotCategory.values.where((cat) {
-                        return cat == SpotCategory.hotels ||
-                            cat == SpotCategory.dining ||
-                            cat == SpotCategory.touristAgents ||
-                            cat == SpotCategory.tickets ||
-                            cat == SpotCategory.guides;
-                      }).map((cat) {
-                        return DropdownMenuItem(
-                          value: cat,
-                          child: Text(
-                            cat.name.toUpperCase(),
-                            overflow: TextOverflow.ellipsis,
-                          ),
-                        );
-                      }).toList(),
+                      items: SpotCategory.values
+                          .where((cat) {
+                            return cat == SpotCategory.hotels ||
+                                cat == SpotCategory.dining ||
+                                cat == SpotCategory.touristAgents ||
+                                cat == SpotCategory.tickets ||
+                                cat == SpotCategory.guides;
+                          })
+                          .map((cat) {
+                            return DropdownMenuItem(
+                              value: cat,
+                              child: Text(
+                                cat.name.toUpperCase(),
+                                overflow: TextOverflow.ellipsis,
+                              ),
+                            );
+                          })
+                          .toList(),
                       onChanged: (val) =>
                           setState(() => _selectedCategory = val),
                       validator: (v) => v == null ? 'Required' : null,

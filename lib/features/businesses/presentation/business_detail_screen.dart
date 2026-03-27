@@ -176,9 +176,9 @@ class BusinessDetailScreen extends StatelessWidget {
             Container(
               padding: const EdgeInsets.all(10),
               decoration: BoxDecoration(
-                color: Theme.of(context).colorScheme.primaryContainer.withValues(
-                  alpha: 0.4,
-                ),
+                color: Theme.of(
+                  context,
+                ).colorScheme.primaryContainer.withValues(alpha: 0.4),
                 shape: BoxShape.circle,
               ),
               child: Icon(
@@ -188,17 +188,14 @@ class BusinessDetailScreen extends StatelessWidget {
               ),
             ),
             const SizedBox(width: 16),
-            Text(
-              label,
-              style: Theme.of(context).textTheme.bodyLarge,
-            ),
+            Text(label, style: Theme.of(context).textTheme.bodyLarge),
             const Spacer(),
             Icon(
               Icons.chevron_right,
               size: 20,
-              color: Theme.of(context).colorScheme.onSurface.withValues(
-                alpha: 0.3,
-              ),
+              color: Theme.of(
+                context,
+              ).colorScheme.onSurface.withValues(alpha: 0.3),
             ),
           ],
         ),
