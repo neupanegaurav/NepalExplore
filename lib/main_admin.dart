@@ -16,16 +16,16 @@ Future<void> mainAdmin() async {
     anonKey: AppConfig.supabaseAnonKey,
   );
 
-  runApp(const ProviderScope(child: ExploreNepalAdminApp()));
+  runApp(const ProviderScope(child: NepalExploreAdminApp()));
 }
 
-class ExploreNepalAdminApp extends StatelessWidget {
-  const ExploreNepalAdminApp({super.key});
+class NepalExploreAdminApp extends StatelessWidget {
+  const NepalExploreAdminApp({super.key});
 
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      title: 'ExploreNepal Portal',
+      title: 'NepalExplore Portal',
       theme: AppTheme.lightTheme,
       darkTheme: AppTheme.darkTheme,
       themeMode: ThemeMode.system,

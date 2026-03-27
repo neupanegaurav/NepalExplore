@@ -66,7 +66,7 @@ class NepalExploreMobileApp extends ConsumerWidget {
     final themeMode = ref.watch(themeModeProvider);
 
     return MaterialApp(
-      title: 'ExploreNepal',
+      title: 'NepalExplore',
       theme: AppTheme.lightTheme,
       darkTheme: AppTheme.darkTheme,
       themeMode: themeMode,

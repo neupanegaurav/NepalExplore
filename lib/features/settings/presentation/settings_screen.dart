@@ -350,7 +350,7 @@ class SettingsScreen extends ConsumerWidget {
                               size: 20,
                             ),
                           ),
-                          title: const Text('About ExploreNepal'),
+                          title: const Text('About NepalExplore'),
                           subtitle: const Text('Version 3.0'),
                         ),
                         Divider(

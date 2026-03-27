@@ -71,7 +71,7 @@ class _AdminLoginScreenState extends State<AdminLoginScreen> {
                   crossAxisAlignment: CrossAxisAlignment.stretch,
                   children: [
                     Text(
-                      'ExploreNepal Portal',
+                      'NepalExplore Portal',
                       style: theme.textTheme.headlineSmall,
                     ),
                     const SizedBox(height: 8),

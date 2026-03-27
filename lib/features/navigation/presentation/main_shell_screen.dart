@@ -132,7 +132,7 @@ class _MainShellScreenState extends State<MainShellScreen> {
                                         CrossAxisAlignment.start,
                                     children: [
                                       Text(
-                                        'ExploreNepal',
+                                        'NepalExplore',
                                         style: theme.textTheme.titleMedium,
                                       ),
                                       Text(
